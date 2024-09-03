@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 cd _site
-chmod -R 777 .
+sudo chmod -R 777 .
 date=$(date '+%Y-%m-%dT%H:%M:%S')
 for FILE in *.html; do 
     echo "Processing $PWD/$FILE file...";

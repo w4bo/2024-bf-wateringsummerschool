@@ -1,0 +1,36 @@
+name: "build"
+on: [push, pull_request]
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Generate the slides
+        run: |
+          cd slides 
+          docker compose up
+      - name: Deploy
+        if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')
+        uses: JamesIves/github-pages-deploy-action@v4.6.4
+        with:
+          branch: gh-pages
+          folder: slides/_site
+      - uses: browser-actions/setup-chrome@v1
+        with:
+          chrome-version: 120
+      - name: Export pdfs
+        run: |
+          cd slides 
+          chmod +x export2pdf.sh
+          ./export2pdf.sh
+      - name: Install Node
+        uses: actions/setup-node@v4.0.3
+        with:
+          node-version-file: package.json
+      - name: Release
+        if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')
+        run: |
+          npm install
+          npx semantic-release
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}

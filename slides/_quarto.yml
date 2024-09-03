@@ -1,0 +1,48 @@
+project:
+  output-dir: _site
+  render:
+    - cs-smartirrigation.md
+
+# toc: true
+
+format:
+  revealjs: 
+    theme: [white, slides.scss]
+    menu: true
+    progress: true
+    slide-number: true
+    default-image-extension: ""
+    footer: "Matteo Francia - Machine Learning - A.Y. 2024/25"
+    # navigation-mode: vertical
+    controls-layout: bottom-right
+    controls-tutorial: true
+    preview-links: auto
+    reference-location: document
+    footnotes-hover: true
+    scrollable: true
+    width: 1100
+    echo: true
+    code-fold: show
+    code-copy: false
+    code-tools:
+      source: true
+      toggle: false
+      caption: none
+
+  pptx:
+    reference-doc: slides.pptx
+  
+  html:
+    code-line-numbers: true
+    code-fold: show
+    code-copy: false
+    code-tools:
+      source: true
+      toggle: false
+      caption: none
+
+bibliography:
+  - refs.bib
+
+execute:
+    enabled: false

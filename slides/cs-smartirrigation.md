@@ -29,7 +29,6 @@ Patent:
 
 - "METODO E SISTEMA PER IL MONITORAGGIO DELL'UMIDITÀ DEL SUOLO" registered on October 18, 2023 N. 102021000023162
 
-
 <img src="./img/unibo.svg" style="box-shadow: none !important; position: fixed !important; top: -350px !important; right: -300px !important; ; max-height: 500px !important; max-width: 500px !important" />
 
 # Smart Irrigation

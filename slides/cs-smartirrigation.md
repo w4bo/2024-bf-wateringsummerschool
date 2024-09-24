@@ -96,7 +96,7 @@ Our approach focuses on (Kiwi) orchards
     - No digital data/KPIs/automation
 - *Scenario #2*
     - The control of the watering system is refined by observing sensor data
-    - Sensor data is digitalized, no KPIs/automatic
+    - Sensor data is digitalized, no automation
 - *Scenario #3*
     - A decision support system that, knowing how to optimize KPIs, controls the watering system
     - Sensor data is digitalized, automatic KPIs and action
@@ -121,7 +121,7 @@ Our approach focuses on (Kiwi) orchards
     - No digital data/KPIs/automation
 - *Scenario #2*
     - The control of the watering system is refined by observing sensor data
-    - Sensor data is digitalized, no KPIs/automatic
+    - Sensor data is digitalized, no automation
 - *Scenario #3*
     - A decision support system that, knowing how to optimize KPIs, controls the watering system
     - Sensor data is digitalized, automatic KPIs and action
@@ -135,11 +135,11 @@ Our approach focuses on (Kiwi) orchards
 
 # Simulators... {visibility="hidden"}
 
-To achieve our goal, *it necessary to understand of the soil behaves*
+To achieve our goal, *it is necessary to understand of the soil behaves*
 
 Simulate the soil behavior according to physical models [@van1980closed]
 
-- However a fine tuning is required, we need to know/parametrize everything
+- However a fine-tuning is required, we need to know/parametrize everything
     - *Soil* (e.g., retention curve, hysteresis [@pham2005study])
     - *Plant* (e.g., roots, LAI)
     - *Weather* conditions (temperature, humidity, wind, precipitations)
@@ -191,9 +191,9 @@ Our approach is composed of two phases
 ... involves two actors
 
 - *Farmer*: provides knowledge about the field and daily feedbacks
-- *Technician*: defines the optimal status and check the system's behavior
+- *Technician*: defines the optimal status and checks the system's behavior
 
-... requires and IoT environment
+... and requires an IoT environment
 
 - *Sensors* (mandatory): provide real-time knowledge
 - *Actionable water pump*: enables the smart irrigation
@@ -254,7 +254,7 @@ Competitors rely on a single sensor (or a line of sensors at different depths) a
 :::
 ::::
 
-- If watered volume is symmetric along the row, a 2D sensor grid is sufficient to represent the soil volume
+- If the watered volume is symmetric along the row, a 2D sensor grid is sufficient to represent the soil volume
 - If moisture variations take place along the row too, a 3D grid of sensors is required
     - E.g., too sparse drippers
 
@@ -275,12 +275,12 @@ For instance, in the 2D setting
 
 - 4 columns of sensors are located across the row (e.g., 0/30/60/90cm)
     - The column (0, *) is under the dripper
-- Each columns has 3 sensors located at 3 depths (e.g., 20/40/60cm)
+- Each column has 3 sensors located at 3 depths (e.g., 20/40/60cm)
 
 Dataset
 
-- *In two years, we collected 16GB data (as of 2022-08-30)*
-- *In four years, we collected 64GB data (as of 2024-08-30)*
+- *In two years, we collected 16GB of data (as of 2022-08-30)*
+- *In four years, we collected 64GB of data (as of 2024-08-30)*
 
 :::
 ::: {.column width="40%"}
@@ -297,7 +297,7 @@ In the 2D setting (3 x 4 gypsum block sensors)
 - Sample soil moisture-sensor data every 15 minutes
 - Collect dripper and weather data  (humidity, temperature, solar radiation, wind) every hour
 
-How many data does each monitored field produces every season?
+How much data does each monitored field produce every season?
 
 $(12 \cdot 4 \frac{𝑠𝑎𝑚𝑝𝑙𝑒𝑠}{ℎ𝑜𝑢𝑟}+5 \frac{𝑠𝑎𝑚𝑝𝑙𝑒𝑠}{ℎ𝑜𝑢𝑟}) \cdot 24 \frac{ℎ𝑜𝑢𝑟}{𝑑𝑎𝑦} \cdot 30 \frac{𝑑𝑎𝑦}{𝑚𝑜𝑛𝑡ℎ} \cdot 5 \frac{𝑚𝑜𝑛𝑡ℎ}{𝑦𝑒𝑎𝑟} = 200 \cdot 10^3 \frac{𝑠𝑎𝑚𝑝𝑙𝑒𝑠}{𝑦𝑒𝑎𝑟}$
 
@@ -309,8 +309,8 @@ We should consider accessory data for storage and optimization structures
 
 Dataset
 
-- *In two years, we collected 16GB data (as of 2022-08-30)*
-- *In four years, we collected 64GB data (as of 2024-08-30)*
+- *In two years, we collected 16GB of data (as of 2022-08-30)*
+- *In four years, we collected 64GB of data (as of 2024-08-30)*
 
 # Processing
 
@@ -372,7 +372,7 @@ Data generation and augmentation
 - **CRITERIA 3D** [@bittelli2011criteria] to simulate the hydrological fluxes in the soil following Richard’s equations
 - Inputs
     - The *soil texture*
-    - "Default" settings for the *kiwi-plant* (e.g., shape of the tree roots / LAI)
+    - "Default" settings for the *kiwi-plant* (e.g., the shape of the tree roots / LAI)
     - *Watering system* based on a single dripper
     - *Weather conditions* from ARPAE
     - Different *watering patterns* (by changing watering intervals and the amount of supplied water)
@@ -397,7 +397,7 @@ This is a **(multi-output) regression problem**
 
 ![](./img/pluto-nn.svg)
 
-The hyper parameters (structure/learning rates) are set through a hyper-parameter tuning process
+The hyperparameters (structure/learning rates) are set through a hyper-parameter tuning process
 
 - *HyperOpt* [@komer2019hyperopt]: state-of-the-art optimization technique to explore the huge search space of hyper-parameters
 
@@ -461,7 +461,7 @@ The charts support both agricultural technicians and farmers
     - Over-watering: high values in the average chart and low values in the variance chart
 - Where is the root suction higher?
     - A high root suction quickly reduces the moisture in the soil and results in high soil moisture variance
-- How soil moisture dynamics impact on the watered volume?
+- How do soil moisture dynamics impact the watered volume?
     - If, after increasing the water supplied, the profile does not change then the soil disperses water
 
 # Prescripting
@@ -493,20 +493,20 @@ The technician sets an optimal soil moisture and the system must reach it
 
 Given the following algorithm
 
-    IF
-       ((#BlueCells + #LightBlueCells)/(#Cells) < 0.50 &&
-       (#BlueCells)/(#Cells) < 0.25 in the last 12h) &&
-       precipitations < 7mm in the last 12h
-    THEN 
-        Recommended water = Evapotranspiration (ET) of the day before
-    ELSE 
-        Do nothing
+ IF
+ ((#BlueCells + #LightBlueCells)/(#Cells) < 0.50 &&
+ (#BlueCells)/(#Cells) < 0.25 in the last 12h) &&
+ precipitations < 7mm in the last 12h
+ THEN 
+ Recommended water = Evapotranspiration (ET) of the day before
+ ELSE 
+ Do nothing
 
-We provide advices (recommendations) to technicians, who use (and adjust) the advice according their experience.
+We provide advice (recommendations) to technicians, who use (and adjust) the advice according to their experience.
 
 - *Pro*: it relies on the experience of the technician
 - *Con*:
-  - does not scale out to many fields; controlling 6 fields already entails lot of work
+  - does not scale out to many fields; controlling 6 fields already entails a lot of work
   - can be stuck in sub-optimal irrigations (e.g., the system never converges to the optimal scenario)
 
 :::
@@ -784,7 +784,7 @@ Fruit quality results are discussed in [@quartieri2021effect] and [@baldi2023sma
 - *Fewer management issues*
 - *Smaller irrigation amount*
     - MR saved 44% of water during the whole campaign
-    - Max. saving in Jun and Sep: for the farmer is harder to estimate water demand
+    - Max. saving in Jun and Sep: for the farmer, it is harder to estimate water demand
 - *Comparable (or even better) quality of the product*; e.g. in 2021:
     - Productivity of vines was unaffected by irrigation (32-39 kg/vine; 35-44 t/ha)
     - CR's fruits appeared greener (H angle 105) than fruits from MR (H angle 102)
@@ -798,10 +798,10 @@ Fruit quality results are discussed in [@quartieri2021effect] and [@baldi2023sma
 
 |                                       | T0        | T1        |
 |------------------                     |----       |----       |
-| Surface ($ha$)                        |  5        |  5        |
+| Surface ($ha$)                        | 5        | 5        |
 | Pump consumption (KWh)                | 10        | 10        |
 | Cost KWh                              | 0.5€      | 0.5€      |
-| Irrigation volume ($\frac{m^3}{ha}$)  |  3790     | 2112      |
+| Irrigation volume ($\frac{m^3}{ha}$)  | 3790     | 2112      |
 | \#Drippers 4$\frac{l}{h}$ (per $ha$)  | 3344      | 3344      |
 | Water consumption ($\frac{m^3}{h}$)   | 14        | 14        |
 | Pump working hours ($\frac{h}{ha}$)   | 274       | 157       |
@@ -816,7 +816,7 @@ Fruit quality results are discussed in [@quartieri2021effect] and [@baldi2023sma
 Continual learning to overcome the limitations of the simulation
 
 - Adapting the model after its deployment
-- Use the data that is coming into the production environment and retrain the model based 
+- Use the data that is coming into the production environment and retrain the model-based 
 - Fit to unforeseen field conditions
 
 Improving the recommendation
@@ -840,7 +840,7 @@ Homogeneous water recommendation; however, we need to handle:
 **Forecasting**
 
 - While profiling looks at the current state of soil moisture, how will soil moisture change --- for instance --- in a week?
-    - Soil profiles are snapshots of soil moisture, we should learn from time series of snapshots 
+    - Soil profiles are snapshots of soil moisture, we should learn from a time series of snapshots 
     - Features to consider
         - Soil conditions
         - Weather conditions
@@ -853,7 +853,7 @@ Homogeneous water recommendation; however, we need to handle:
 
 Soil monitoring is a possible application of data platforms for precision farming
 
-- Robotics, tractors and implements
+- Robotics, tractors, and implements
 - Satellite images and remote sensing indexes
 - Spatio-temporal analysis
 - And many others!

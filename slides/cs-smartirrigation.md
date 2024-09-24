@@ -422,8 +422,25 @@ The hyperparameters (structure/learning rates) are set through a hyper-parameter
 
 # Evaluation
 
+:::: {.columns}
+::: {.column width="50%"}
+
+Feature-unaware and feature-aware profiling **are complementary**
+
+- *Feature-unaware* profiling allows the system to operate as soon as we have the sensors ready
+    - It requires more sensors to be accurate since it assume that soil-moisture behaves linearly in the soil
+    - However, we cannot have too many sensors due to their economic costs or space constraints
+- *Feature-aware* profiling is more precise and can operate with any layout of sensors
+    - However, it requires weeks of data to tune the simulator
+
+
+:::
+::: {.column width="50%"}
+
 ![Comparing FA and FU](./img/pluto-result.svg)
 
+:::
+::::
 
 # Evaluation {visibility="hidden"}
 
@@ -480,11 +497,14 @@ The technician sets an optimal soil moisture and the system must reach it
 :::
 ::: {.column width="50%"}
 
+
+- **Red**: optimal state
+- *Blue*: current state
+
 ![](./img/pluto-optimal2.svg)
 
 :::
 ::::
-
 
 # Watering Advice (2021-2022) [@quartieri2021effect]
 
@@ -493,14 +513,14 @@ The technician sets an optimal soil moisture and the system must reach it
 
 Given the following algorithm
 
- IF
- ((#BlueCells + #LightBlueCells)/(#Cells) < 0.50 &&
- (#BlueCells)/(#Cells) < 0.25 in the last 12h) &&
- precipitations < 7mm in the last 12h
- THEN 
- Recommended water = Evapotranspiration (ET) of the day before
- ELSE 
- Do nothing
+    IF
+        ((#BlueCells + #LightBlueCells)/(#Cells) < 0.50 &&
+        (#BlueCells)/(#Cells) < 0.25 in the last 12h) &&
+        precipitations < 7mm in the last 12h
+    THEN 
+        Recommended water = Evapotranspiration (ET) of the day before
+    ELSE 
+        Do nothing
 
 We provide advice (recommendations) to technicians, who use (and adjust) the advice according to their experience.
 

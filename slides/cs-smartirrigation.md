@@ -811,6 +811,8 @@ Fruit quality results are discussed in [@quartieri2021effect] and [@baldi2023sma
 :::
 ::: {.column width="34%"}
 
+Savings in energy costs
+
 <div style="font-size: 18px">
 
 |                                       | T0        | T1        |
@@ -825,6 +827,8 @@ Fruit quality results are discussed in [@quartieri2021effect] and [@baldi2023sma
 | *Energy costs*                        | **6850€** | **3925€** |
 
 </div>
+
+But the main impact is on the economic values of Kiwi fruits
 :::
 ::::
 

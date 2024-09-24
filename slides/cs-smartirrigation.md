@@ -4,6 +4,34 @@ title: Soil Moisture Modeling and Assessment
 subtitle: A Case Study
 ---
 
+# Hi!
+
+
+
+{{< include _cs-smartirrigation.md >}}
+
+:::: {.columns}
+::: {.column width="58%"}
+
+Matteo Francia
+
+- Assistant professor at DISI - University of Bologna
+- Contact: m.francia@unibo.it
+
+Main background:
+
+- Ph.D. in *Computer Science and Engineering*
+- Big data and machine learning
+- ... with *applications* to the field of Precision Agriculture
+
+:::
+::: {.column width="42%"}
+
+:::
+::::
+ 
+<img src="./img/unibo.svg" style="box-shadow: none !important; position: fixed !important; top: -350px !important; right: -300px !important; ; max-height: 500px !important; max-width: 500px !important" />
+
 # Smart Irrigation
 
 :::: {.columns}
@@ -12,7 +40,6 @@ subtitle: A Case Study
 The synergy of internet of things (IoT) and precision farming is producing valuable applications in the Agritech domain [@vitali2021crop]
 
 - **Agritech**: use of technology for farming to improve efficiency and profitability
-
 
 Optimizing soil moisture is crucial for watering and crop performance [@turkeltaub2016real]
 
@@ -35,17 +62,19 @@ Optimizing soil moisture is crucial for watering and crop performance [@turkelta
 # Reference Scenario
 
 :::: {.columns}
-::: {.column width="50%"}
+::: {.column width="58%"}
 
-![Kiwi orchard](https://github.com/user-attachments/assets/51ddbda5-791f-4a27-b3e8-0249e68b4be7)
+![Kiwi orchard](./img/kiwifruit-orchard.jpg)
 
 :::
-::: {.column width="50%"}
+::: {.column width="42%"}
 
-![Model of the orchard](https://github.com/user-attachments/assets/3ecb211c-c5ae-4fdf-8870-4449155de0c9)
+![Model of the orchard](./img/soil-volume.svg)
 
 :::
 ::::
+
+Our approach focuses on (Kiwi) orchards
 
 - Kiwi *plants are aligned along rows*
 - Each row has many *drippers* (e.g., 1 every 60cm)
@@ -151,7 +180,63 @@ Simulate the soil behavior according to physical models [@van1980closed]
 
 # Overview of the Approach 
 
-![](https://github.com/user-attachments/assets/ac0d5d37-64b9-4454-84bd-60f5bf83d510)
+:::: {.columns}
+::: {.column width="50%"}
+
+Our approach is composed of two phases
+
+- **Monitoring**: understand the soil behavior
+- **Prescripting**: provide the optimal amount of water
+
+... involves two actors
+
+- *Farmer*: provides knowledge about the field and daily feedbacks
+- *Technician*: defines the optimal status and check the system's behavior
+
+... requires and IoT environment
+
+- *Sensors* (mandatory): provide real-time knowledge
+- *Actionable water pump*: enables the smart irrigation
+    - Without a remote connection, we provide the farmer a recommendation about the irrigation (e.g., via e-mail)
+
+:::
+::: {.column width="50%"}
+
+![Model of the orchard](./img/overview.svg)
+
+:::
+::::
+
+# Monitoring
+
+![Model of the orchard](./img/monitoring.svg)
+
+# From Sensors to Soil Profiles
+
+:::: {.columns}
+::: {.column width="32%"}
+
+![Actual soil moisture](./img/sm.svg)
+
+:::
+::: {.column width="32%"}
+
+![Sampled data](./img/grid.svg)
+
+:::
+::: {.column width="32%"}
+
+![Profile](./img/profile.svg)
+
+:::
+::::
+
+See [@francia2022multi]
+
+1. Soil moisture is a continuum in the soil
+1. Sensors return a discretized representation of soil moisture
+    - Depending on the number of sensors and on their layout the monitoring accuracy changes
+1. Goal: produce fine-grained soil profiles out of coarse-grained layouts
 
 # Sensor Layouts and Symmetry Assumptions
 
@@ -160,13 +245,12 @@ Competitors rely on a single sensor (or a line of sensors at different depths) a
 :::: {.columns}
 ::: {.column width="50%"}
 
-![](https://github.com/user-attachments/assets/3ecb211c-c5ae-4fdf-8870-4449155de0c9)
+![Model of the orchard](./img/soil-volume.svg)
 
 :::
 ::: {.column width="50%"}
 
-![](https://github.com/user-attachments/assets/535ef33f-3107-4258-adb9-e3686cb327b3)
-
+![Symmetry](./img/symmetry.svg)
 :::
 ::::
 
@@ -174,34 +258,9 @@ Competitors rely on a single sensor (or a line of sensors at different depths) a
 - If moisture variations take place along the row too, a 3D grid of sensors is required
     - E.g., too sparse drippers
 
-# Monitoring: From Sensors to Soil Profiles [@francia2022multi]
+# Overview
 
-:::: {.columns}
-::: {.column width="32%"}
-
-![Actual soil moisture](https://github.com/user-attachments/assets/b0c575e8-b0fe-4726-82a0-a894d53db809)
-
-:::
-::: {.column width="32%"}
-
-![Sampled data](https://github.com/user-attachments/assets/e792be94-cbd4-489e-9026-e5c4f80d0a45)
-
-:::
-::: {.column width="32%"}
-
-![Profile](https://github.com/user-attachments/assets/df2e2a26-8a54-49e1-936d-f8d93f48df55)
-
-:::
-::::
-
-1. Soil moisture is a continuum in the soil
-1. Sensors return a discretized representation of soil moisture
-    - Depending on the number of sensors and on their layout the monitoring accuracy changes
-1. Goal: produce fine-grained soil profiles out of coarse-grained layouts
-
-# 
-
-![Overview](https://github.com/user-attachments/assets/83118d01-bad4-4b54-8921-d2d1f9d73a3f)
+![Overview](./img/pluto-overview.svg)
 
 # Data Collection
 
@@ -226,7 +285,7 @@ Dataset
 :::
 ::: {.column width="40%"}
 
-![](https://github.com/user-attachments/assets/90034743-1c3a-46b6-9408-93f2644703f1)
+![Overview](./img/pluto-collection.svg)
 
 :::
 ::::
@@ -271,26 +330,28 @@ Dataset
 :::
 ::: {.column width="40%"}
 
-![](https://github.com/user-attachments/assets/6397b84c-b1ec-4ce9-979f-a1e688d5c2d1)
+![Overview](./img/pluto-processing.svg)
 
 :::
 ::::
 
-# Feature Unaware
+# Online Phase: Feature-Unaware Profiling
+
+Profile real-time sensor data through **statistical techniques**
 
 - Plug-and-play 
 - Create a linear interpolation of the real-time sensor data
 
-![Feature Unaware Profiling](https://github.com/user-attachments/assets/8d6fbc76-edd5-4a63-9a19-d035c432fa9d)
+![Feature Unaware Profiling](./img/pluto-bilinear.svg)
 
-# Feature Aware
+# Offline Phase: Feature-Aware Profiling
 
 :::: {.columns}
 ::: {.column width="60%"}
 
-- Interpolate real-time sensor data through machine learning
+Profile real-time sensor data through a **machine learning model**
 
-*Offline pipeline*, given the soil texture as input...
+In the *offline pipeline*, we train the model given the soil texture as input...
 
 - Simulate different patterns of SM to produce a dataset of simulated SM
 - Train a machine learning model on such data
@@ -299,7 +360,7 @@ Dataset
 :::
 ::: {.column width="40%"}
 
-![](https://github.com/user-attachments/assets/80848360-0e67-48c9-b70a-5468ca21951e)
+![](./img/pluto-offline.svg)
 
 :::
 ::::
@@ -308,7 +369,7 @@ Dataset
 
 Data generation and augmentation
 
-- **CRITERIA 3D** to simulate the hydrological fluxes in the soil following Richard’s equations
+- **CRITERIA 3D** [@bittelli2011criteria] to simulate the hydrological fluxes in the soil following Richard’s equations
 - Inputs
     - The *soil texture*
     - "Default" settings for the *kiwi-plant* (e.g., shape of the tree roots / LAI)
@@ -323,7 +384,7 @@ Data generation and augmentation
 
 # Feature Aware: Machine Learning
 
-![](https://github.com/user-attachments/assets/d4d4226e-fd22-42ac-ae4c-90b08b971c58)
+![](./img/pluto-mlproblem.svg)
 
 This is a **(multi-output) regression problem**
 
@@ -334,34 +395,35 @@ This is a **(multi-output) regression problem**
 
 # Artificial Neural Networks
 
-![ANN](https://github.com/user-attachments/assets/b3b7641a-bba6-4333-b3e4-8aafdc08fca4)
+![](./img/pluto-nn.svg)
 
 The hyper parameters (structure/learning rates) are set through a hyper-parameter tuning process
 
-- *HyperOpt*: state-of-the-art optimization technique to explore the huge search space of hyper-parameters
+- *HyperOpt* [@komer2019hyperopt]: state-of-the-art optimization technique to explore the huge search space of hyper-parameters
 
 # Artificial Neural Networks
 
-![ANN and Hyper-parameters](https://github.com/user-attachments/assets/083d3687-cb10-4c93-80c1-33fef0d0bdb5)
+![ANN and Hyper-parameters](./img/pluto-nnhp.svg)
 
 # Feature Aware vs Unaware
 
 :::: {.columns}
 ::: {.column width="50%"}
 
-![Feature Unaware](https://github.com/user-attachments/assets/39bc042a-dc34-4af4-8e6e-d1b025930e1f)
+![Feature Unaware](./img/pluto-unaware.svg)
 
 :::
 ::: {.column width="50%"}
 
-![Feature Aware](https://github.com/user-attachments/assets/86103a11-a85b-431f-bbf6-65cb1333f0e5)
+![Feature Aware](./img/pluto-aware.svg)
 
 :::
 ::::
 
 # Evaluation
 
-![Comparing FA and FU](https://github.com/user-attachments/assets/7a07f057-3297-4cc4-ac05-2cfaf6fda152)
+![Comparing FA and FU](./img/pluto-result.svg)
+
 
 # Evaluation {visibility="hidden"}
 
@@ -404,14 +466,22 @@ The charts support both agricultural technicians and farmers
 
 # Prescripting
 
+![Model of the orchard](./img/prescripting.svg)
+
+# Prescripting
+
 The technician sets an optimal soil moisture and the system must reach it
 
 :::: {.columns}
 ::: {.column width="50%"}
-![](https://github.com/user-attachments/assets/e25c69f8-44a7-4401-a436-3feb0758832a)
+
+![](./img/pluto-optimal.svg)
+
 :::
 ::: {.column width="50%"}
-![](https://github.com/user-attachments/assets/43aaaae7-7e5a-4400-af7d-8ffd884a2162)
+
+![](./img/pluto-optimal2.svg)
+
 :::
 ::::
 
@@ -435,17 +505,21 @@ Given the following algorithm
 We provide advices (recommendations) to technicians, who use (and adjust) the advice according their experience.
 
 - *Pro*: it relies on the experience of the technician
-- *Con*: does not scale out to many fields; controlling 6 fields entails lot of work
+- *Con*:
+  - does not scale out to many fields; controlling 6 fields already entails lot of work
+  - can be stuck in sub-optimal irrigations (e.g., the system never converges to the optimal scenario)
 
 :::
 ::: {.column width="50%"}
-![](https://github.com/user-attachments/assets/e25c69f8-44a7-4401-a436-3feb0758832a)
+
+![](./img/pluto-optimal.svg)
+
 :::
 ::::
 
 # Automated Watering (2023-2024)
 
-![PID](https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/PID_en.svg/400px-PID_en.svg.png)
+![PID](./img/PID.svg)
 
 **PID**, a control loop mechanism employing feedback
 
@@ -455,7 +529,7 @@ We provide advices (recommendations) to technicians, who use (and adjust) the ad
 
 # 
 
-![PID](https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/PID_en.svg/400px-PID_en.svg.png)
+![PID](./img/PID.svg)
 
 Correction is based on 3 terms: $u(t)=K_{p}e(t)+K_{i}\int_{0}^{t} e(\tau)\mathrm{d}\tau + K_{d}{\frac{\mathrm{d}e(t)}{\mathrm{d}t}}$
 
@@ -483,34 +557,38 @@ Two irrigation setups during the 2021-2024 campaigns (i.e., May/October) within 
 
 **T0**
 
-![Single Wing](https://github.com/user-attachments/assets/5cb9c2a0-61cb-4532-8d43-15f5ce0cdb7e)
+<img src="./img/single-wing.svg" style="height: 100px !important; display: block; margin-left: auto; margin-right: auto; width: 50%;"/>
 
-![Control Row (T0)](https://github.com/user-attachments/assets/6f648d9d-5c3e-4c24-b0e4-9ce30a6ec90d)
+
+![Control Row (T0)](./img/t0-rev.svg)
 
 :::
 ::: {.column width="33%"}
 
 **T1**
 
-![Single Wing](https://github.com/user-attachments/assets/5cb9c2a0-61cb-4532-8d43-15f5ce0cdb7e)
-
-![Managed Row (T1)](https://github.com/user-attachments/assets/cb80c32b-f892-4283-86a6-bae0793a0613)
+<img src="./img/single-wing.svg" style="height: 100px !important; display: block; margin-left: auto; margin-right: auto; width: 50%;"/>
+ 
+![Managed Row (T1)](./img/t1-rev.svg)
 
 :::
 ::: {.column width="33%"}
 
 **T2**
 
-![Double Wing](https://github.com/user-attachments/assets/d3eed7d0-8001-47b2-a66d-d6ba16aa26db)
+<img src="./img/double-wing.svg" style="height: 100px !important; display: block; margin-left: auto; margin-right: auto; width: 50%;"/>
 
-![Managed Row (T2)](https://github.com/user-attachments/assets/4c832868-2913-4f33-bf6f-bfcaf639e0ad)
+![Managed Row (T2)](./img/t2-rev.svg)
 
 :::
 ::::
 
 # Water consumption
 
-![T0 vs T1](https://github.com/user-attachments/assets/e4307c5b-e813-4699-9022-4b0e145f04f5)
+![T0 vs T1](./img/pluto-t0t1.svg)
+
+:::: {.columns}
+::: {.column width="60%"}
 
 <table border="1" class="dataframe">
   <thead>
@@ -568,7 +646,13 @@ Two irrigation setups during the 2021-2024 campaigns (i.e., May/October) within 
   </tbody>
 </table>
 
+:::
+::: {.column width="38%"}
+
 Fruit quality results are discussed in [@quartieri2021effect] and [@baldi2023smart]
+
+:::
+::::
 
 # Fruit quality {visibility="hidden"}
 

@@ -545,7 +545,7 @@ We provide advice (recommendations) to technicians, who use (and adjust) the adv
 
 - Calculates an error $e(t)$ as the difference between a desired setpoint (SP) and a measured process variable (PV)
     - $e(t) = r(t) - y(t)$
-- Applies a correction based on proportional, integral, and derivative terms
+- Applies a correction based on *proportional*, *integral*, and *derivative* terms
 
 # 
 

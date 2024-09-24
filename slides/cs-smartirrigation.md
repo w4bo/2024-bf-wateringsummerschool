@@ -575,7 +575,7 @@ Two irrigation setups during the 2021-2024 campaigns (i.e., May/October) within 
 :::: {.columns}
 ::: {.column width="33%"}
 
-**T0**
+**T0** (single wing)
 
 <img src="./img/single-wing.svg" style="height: 100px !important; display: block; margin-left: auto; margin-right: auto; width: 50%;"/>
 
@@ -585,7 +585,7 @@ Two irrigation setups during the 2021-2024 campaigns (i.e., May/October) within 
 :::
 ::: {.column width="33%"}
 
-**T1**
+**T1** (single wing)
 
 <img src="./img/single-wing.svg" style="height: 100px !important; display: block; margin-left: auto; margin-right: auto; width: 50%;"/>
  
@@ -594,7 +594,7 @@ Two irrigation setups during the 2021-2024 campaigns (i.e., May/October) within 
 :::
 ::: {.column width="33%"}
 
-**T2**
+**T2** (double wing)
 
 <img src="./img/double-wing.svg" style="height: 100px !important; display: block; margin-left: auto; margin-right: auto; width: 50%;"/>
 

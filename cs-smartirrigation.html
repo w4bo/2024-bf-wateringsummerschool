@@ -358,6 +358,28 @@ Matteo Francia <br> DISI — University of Bologna <br> m.francia@unibo.it
 </div>
 
 </section>
+<section id="hi" class="title-slide slide level1 center">
+<h1>Hi!</h1>
+<div class="columns">
+<div class="column" style="width:58%;">
+<p>Matteo Francia</p>
+<ul>
+<li>Assistant professor at DISI - University of Bologna</li>
+<li>Contact: m.francia@unibo.it</li>
+</ul>
+<p>Main background:</p>
+<ul>
+<li>Ph.D.&nbsp;in <em>Computer Science and Engineering</em></li>
+<li>Big data and machine learning</li>
+<li>… with <em>applications</em> to the field of Precision Agriculture</li>
+</ul>
+</div><div class="column" style="width:42%;">
+
+</div>
+</div>
+<p><img src="./img/unibo.svg" style="box-shadow: none !important; position: fixed !important; top: -350px !important; right: -300px !important; ; max-height: 500px !important; max-width: 500px !important"></p>
+</section>
+
 <section id="smart-irrigation" class="title-slide slide level1 center">
 <h1>Smart Irrigation</h1>
 <div class="columns">
@@ -389,22 +411,23 @@ Matteo Francia <br> DISI — University of Bologna <br> m.francia@unibo.it
 <section id="reference-scenario" class="title-slide slide level1 center">
 <h1>Reference Scenario</h1>
 <div class="columns">
-<div class="column" style="width:50%;">
+<div class="column" style="width:58%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="https://github.com/user-attachments/assets/51ddbda5-791f-4a27-b3e8-0249e68b4be7"></p>
+<p><img data-src="./img/kiwifruit-orchard.jpg"></p>
 <figcaption>Kiwi orchard</figcaption>
 </figure>
 </div>
-</div><div class="column" style="width:50%;">
+</div><div class="column" style="width:42%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="https://github.com/user-attachments/assets/3ecb211c-c5ae-4fdf-8870-4449155de0c9"></p>
+<p><img data-src="./img/soil-volume.svg"></p>
 <figcaption>Model of the orchard</figcaption>
 </figure>
 </div>
 </div>
 </div>
+<p>Our approach focuses on (Kiwi) orchards</p>
 <ul>
 <li>Kiwi <em>plants are aligned along rows</em></li>
 <li>Each row has many <em>drippers</em> (e.g., 1 every 60cm)</li>
@@ -428,17 +451,97 @@ Matteo Francia <br> DISI — University of Bologna <br> m.francia@unibo.it
 
 <section id="overview-of-the-approach" class="title-slide slide level1 center">
 <h1>Overview of the Approach</h1>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Our approach is composed of two phases</p>
+<ul>
+<li><strong>Monitoring</strong>: understand the soil behavior</li>
+<li><strong>Prescripting</strong>: provide the optimal amount of water</li>
+</ul>
+<p>… involves two actors</p>
+<ul>
+<li><em>Farmer</em>: provides knowledge about the field and daily feedbacks</li>
+<li><em>Technician</em>: defines the optimal status and check the system’s behavior</li>
+</ul>
+<p>… requires and IoT environment</p>
+<ul>
+<li><em>Sensors</em> (mandatory): provide real-time knowledge</li>
+<li><em>Actionable water pump</em>: enables the smart irrigation
+<ul>
+<li>Without a remote connection, we provide the farmer a recommendation about the irrigation (e.g., via e-mail)</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="./img/overview.svg"></p>
+<figcaption>Model of the orchard</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
 
-<img data-src="https://github.com/user-attachments/assets/ac0d5d37-64b9-4454-84bd-60f5bf83d510" class="r-stretch"></section>
+<section id="monitoring" class="title-slide slide level1 center">
+<h1>Monitoring</h1>
+
+<img data-src="./img/monitoring.svg" class="r-stretch quarto-figure-center"><p class="caption">Model of the orchard</p></section>
+
+<section id="from-sensors-to-soil-profiles" class="title-slide slide level1 center scrollable">
+<h1>From Sensors to Soil Profiles</h1>
+<div class="columns">
+<div class="column" style="width:32%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="./img/sm.svg"></p>
+<figcaption>Actual soil moisture</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:32%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="./img/grid.svg"></p>
+<figcaption>Sampled data</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:32%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="./img/profile.svg"></p>
+<figcaption>Profile</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>See <span class="citation" data-cites="francia2022multi">(<a href="#/references" role="doc-biblioref" onclick="">Francia, Giovanelli, and Golfarelli 2022</a>)</span></p>
+<ol type="1">
+<li>Soil moisture is a continuum in the soil</li>
+<li>Sensors return a discretized representation of soil moisture
+<ul>
+<li>Depending on the number of sensors and on their layout the monitoring accuracy changes</li>
+</ul></li>
+<li>Goal: produce fine-grained soil profiles out of coarse-grained layouts</li>
+</ol>
+</section>
 
 <section id="sensor-layouts-and-symmetry-assumptions" class="title-slide slide level1 center">
 <h1>Sensor Layouts and Symmetry Assumptions</h1>
 <p>Competitors rely on a single sensor (or a line of sensors at different depths) and assume that the soil moisture is uniform everywhere</p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p><img data-src="https://github.com/user-attachments/assets/3ecb211c-c5ae-4fdf-8870-4449155de0c9"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="./img/soil-volume.svg"></p>
+<figcaption>Model of the orchard</figcaption>
+</figure>
+</div>
 </div><div class="column" style="width:50%;">
-<p><img data-src="https://github.com/user-attachments/assets/535ef33f-3107-4258-adb9-e3686cb327b3"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="./img/symmetry.svg"></p>
+<figcaption>Symmetry</figcaption>
+</figure>
+</div>
 </div>
 </div>
 <ul>
@@ -450,46 +553,10 @@ Matteo Francia <br> DISI — University of Bologna <br> m.francia@unibo.it
 </ul>
 </section>
 
-<section id="monitoring-from-sensors-to-soil-profiles-francia2022multi" class="title-slide slide level1 center scrollable">
-<h1>Monitoring: From Sensors to Soil Profiles <span class="citation" data-cites="francia2022multi">(<a href="#/references" role="doc-biblioref" onclick="">Francia, Giovanelli, and Golfarelli 2022</a>)</span></h1>
-<div class="columns">
-<div class="column" style="width:32%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="https://github.com/user-attachments/assets/b0c575e8-b0fe-4726-82a0-a894d53db809"></p>
-<figcaption>Actual soil moisture</figcaption>
-</figure>
-</div>
-</div><div class="column" style="width:32%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="https://github.com/user-attachments/assets/e792be94-cbd4-489e-9026-e5c4f80d0a45"></p>
-<figcaption>Sampled data</figcaption>
-</figure>
-</div>
-</div><div class="column" style="width:32%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="https://github.com/user-attachments/assets/df2e2a26-8a54-49e1-936d-f8d93f48df55"></p>
-<figcaption>Profile</figcaption>
-</figure>
-</div>
-</div>
-</div>
-<ol type="1">
-<li>Soil moisture is a continuum in the soil</li>
-<li>Sensors return a discretized representation of soil moisture
-<ul>
-<li>Depending on the number of sensors and on their layout the monitoring accuracy changes</li>
-</ul></li>
-<li>Goal: produce fine-grained soil profiles out of coarse-grained layouts</li>
-</ol>
-</section>
+<section id="overview" class="title-slide slide level1 center">
+<h1>Overview</h1>
 
-<section id="section-1" class="title-slide slide level1 center">
-<h1></h1>
-
-<img data-src="https://github.com/user-attachments/assets/83118d01-bad4-4b54-8921-d2d1f9d73a3f" class="r-stretch quarto-figure-center"><p class="caption">Overview</p></section>
+<img data-src="./img/pluto-overview.svg" class="r-stretch quarto-figure-center"><p class="caption">Overview</p></section>
 
 <section id="data-collection" class="title-slide slide level1 center">
 <h1>Data Collection</h1>
@@ -513,7 +580,12 @@ Matteo Francia <br> DISI — University of Bologna <br> m.francia@unibo.it
 <li><em>In four years, we collected 64GB data (as of 2024-08-30)</em></li>
 </ul>
 </div><div class="column" style="width:40%;">
-<p><img data-src="https://github.com/user-attachments/assets/90034743-1c3a-46b6-9408-93f2644703f1"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="./img/pluto-collection.svg"></p>
+<figcaption>Overview</figcaption>
+</figure>
+</div>
 </div>
 </div>
 </section>
@@ -535,35 +607,39 @@ Matteo Francia <br> DISI — University of Bologna <br> m.francia@unibo.it
 <li>Create an interpolation of the real-time sensor data through machine learning</li>
 </ul>
 </div><div class="column" style="width:40%;">
-<p><img data-src="https://github.com/user-attachments/assets/6397b84c-b1ec-4ce9-979f-a1e688d5c2d1"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="./img/pluto-processing.svg"></p>
+<figcaption>Overview</figcaption>
+</figure>
+</div>
 </div>
 </div>
 </section>
 
-<section id="feature-unaware" class="title-slide slide level1 center">
-<h1>Feature Unaware</h1>
+<section id="online-phase-feature-unaware-profiling" class="title-slide slide level1 center">
+<h1>Online Phase: Feature-Unaware Profiling</h1>
+<p>Profile real-time sensor data through <strong>statistical techniques</strong></p>
 <ul>
 <li>Plug-and-play</li>
 <li>Create a linear interpolation of the real-time sensor data</li>
 </ul>
 
-<img data-src="https://github.com/user-attachments/assets/8d6fbc76-edd5-4a63-9a19-d035c432fa9d" class="r-stretch quarto-figure-center"><p class="caption">Feature Unaware Profiling</p></section>
+<img data-src="./img/pluto-bilinear.svg" class="r-stretch quarto-figure-center"><p class="caption">Feature Unaware Profiling</p></section>
 
-<section id="feature-aware" class="title-slide slide level1 center">
-<h1>Feature Aware</h1>
+<section id="offline-phase-feature-aware-profiling" class="title-slide slide level1 center">
+<h1>Offline Phase: Feature-Aware Profiling</h1>
 <div class="columns">
 <div class="column" style="width:60%;">
-<ul>
-<li>Interpolate real-time sensor data through machine learning</li>
-</ul>
-<p><em>Offline pipeline</em>, given the soil texture as input…</p>
+<p>Profile real-time sensor data through a <strong>machine learning model</strong></p>
+<p>In the <em>offline pipeline</em>, we train the model given the soil texture as input…</p>
 <ul>
 <li>Simulate different patterns of SM to produce a dataset of simulated SM</li>
 <li>Train a machine learning model on such data</li>
 <li>Deploy the model to estimate the soil profile</li>
 </ul>
 </div><div class="column" style="width:40%;">
-<p><img data-src="https://github.com/user-attachments/assets/80848360-0e67-48c9-b70a-5468ca21951e"></p>
+<p><img data-src="./img/pluto-offline.svg"></p>
 </div>
 </div>
 </section>
@@ -572,7 +648,7 @@ Matteo Francia <br> DISI — University of Bologna <br> m.francia@unibo.it
 <h1>Feature Aware: Crop Simulator</h1>
 <p>Data generation and augmentation</p>
 <ul>
-<li><strong>CRITERIA 3D</strong> to simulate the hydrological fluxes in the soil following Richard’s equations</li>
+<li><strong>CRITERIA 3D</strong> <span class="citation" data-cites="bittelli2011criteria">(<a href="#/references" role="doc-biblioref" onclick="">Bittelli et al. 2011</a>)</span> to simulate the hydrological fluxes in the soil following Richard’s equations</li>
 <li>Inputs
 <ul>
 <li>The <em>soil texture</em></li>
@@ -594,7 +670,7 @@ Matteo Francia <br> DISI — University of Bologna <br> m.francia@unibo.it
 <section id="feature-aware-machine-learning" class="title-slide slide level1 center">
 <h1>Feature Aware: Machine Learning</h1>
 
-<img data-src="https://github.com/user-attachments/assets/d4d4226e-fd22-42ac-ae4c-90b08b971c58" class="r-stretch"><p>This is a <strong>(multi-output) regression problem</strong></p>
+<img data-src="./img/pluto-mlproblem.svg" class="r-stretch"><p>This is a <strong>(multi-output) regression problem</strong></p>
 <ul>
 <li>The task is to <em>learn the function mapping the input to the continuous output</em></li>
 <li>We tried several machine learning models
@@ -608,16 +684,16 @@ Matteo Francia <br> DISI — University of Bologna <br> m.francia@unibo.it
 <section id="artificial-neural-networks" class="title-slide slide level1 center">
 <h1>Artificial Neural Networks</h1>
 
-<img data-src="https://github.com/user-attachments/assets/b3b7641a-bba6-4333-b3e4-8aafdc08fca4" class="r-stretch quarto-figure-center"><p class="caption">ANN</p><p>The hyper parameters (structure/learning rates) are set through a hyper-parameter tuning process</p>
+<img data-src="./img/pluto-nn.svg" class="r-stretch"><p>The hyper parameters (structure/learning rates) are set through a hyper-parameter tuning process</p>
 <ul>
-<li><em>HyperOpt</em>: state-of-the-art optimization technique to explore the huge search space of hyper-parameters</li>
+<li><em>HyperOpt</em> <span class="citation" data-cites="komer2019hyperopt">(<a href="#/references" role="doc-biblioref" onclick="">Komer, Bergstra, and Eliasmith 2019</a>)</span>: state-of-the-art optimization technique to explore the huge search space of hyper-parameters</li>
 </ul>
 </section>
 
 <section id="artificial-neural-networks-1" class="title-slide slide level1 center">
 <h1>Artificial Neural Networks</h1>
 
-<img data-src="https://github.com/user-attachments/assets/083d3687-cb10-4c93-80c1-33fef0d0bdb5" class="r-stretch quarto-figure-center"><p class="caption">ANN and Hyper-parameters</p></section>
+<img data-src="./img/pluto-nnhp.svg" class="r-stretch quarto-figure-center"><p class="caption">ANN and Hyper-parameters</p></section>
 
 <section id="feature-aware-vs-unaware" class="title-slide slide level1 center">
 <h1>Feature Aware vs Unaware</h1>
@@ -625,14 +701,14 @@ Matteo Francia <br> DISI — University of Bologna <br> m.francia@unibo.it
 <div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="https://github.com/user-attachments/assets/39bc042a-dc34-4af4-8e6e-d1b025930e1f"></p>
+<p><img data-src="./img/pluto-unaware.svg"></p>
 <figcaption>Feature Unaware</figcaption>
 </figure>
 </div>
 </div><div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="https://github.com/user-attachments/assets/86103a11-a85b-431f-bbf6-65cb1333f0e5"></p>
+<p><img data-src="./img/pluto-aware.svg"></p>
 <figcaption>Feature Aware</figcaption>
 </figure>
 </div>
@@ -643,7 +719,7 @@ Matteo Francia <br> DISI — University of Bologna <br> m.francia@unibo.it
 <section id="evaluation" class="title-slide slide level1 center">
 <h1>Evaluation</h1>
 
-<img data-src="https://github.com/user-attachments/assets/7a07f057-3297-4cc4-ac05-2cfaf6fda152" class="r-stretch quarto-figure-center"><p class="caption">Comparing FA and FU</p></section>
+<img data-src="./img/pluto-result.svg" class="r-stretch quarto-figure-center"><p class="caption">Comparing FA and FU</p></section>
 
 
 
@@ -655,12 +731,17 @@ Matteo Francia <br> DISI — University of Bologna <br> m.francia@unibo.it
 
 <section id="prescripting" class="title-slide slide level1 center">
 <h1>Prescripting</h1>
+
+<img data-src="./img/prescripting.svg" class="r-stretch quarto-figure-center"><p class="caption">Model of the orchard</p></section>
+
+<section id="prescripting-1" class="title-slide slide level1 center">
+<h1>Prescripting</h1>
 <p>The technician sets an optimal soil moisture and the system must reach it</p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p><img data-src="https://github.com/user-attachments/assets/e25c69f8-44a7-4401-a436-3feb0758832a"></p>
+<p><img data-src="./img/pluto-optimal.svg"></p>
 </div><div class="column" style="width:50%;">
-<p><img data-src="https://github.com/user-attachments/assets/43aaaae7-7e5a-4400-af7d-8ffd884a2162"></p>
+<p><img data-src="./img/pluto-optimal2.svg"></p>
 </div>
 </div>
 </section>
@@ -681,10 +762,14 @@ ELSE
 <p>We provide advices (recommendations) to technicians, who use (and adjust) the advice according their experience.</p>
 <ul>
 <li><em>Pro</em>: it relies on the experience of the technician</li>
-<li><em>Con</em>: does not scale out to many fields; controlling 6 fields entails lot of work</li>
+<li><em>Con</em>:
+<ul>
+<li>does not scale out to many fields; controlling 6 fields already entails lot of work</li>
+<li>can be stuck in sub-optimal irrigations (e.g., the system never converges to the optimal scenario)</li>
+</ul></li>
 </ul>
 </div><div class="column" style="width:50%;">
-<p><img data-src="https://github.com/user-attachments/assets/e25c69f8-44a7-4401-a436-3feb0758832a"></p>
+<p><img data-src="./img/pluto-optimal.svg"></p>
 </div>
 </div>
 </section>
@@ -692,7 +777,7 @@ ELSE
 <section id="automated-watering-2023-2024" class="title-slide slide level1 center">
 <h1>Automated Watering (2023-2024)</h1>
 
-<img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/PID_en.svg/400px-PID_en.svg.png" class="r-stretch quarto-figure-center"><p class="caption">PID</p><p><strong>PID</strong>, a control loop mechanism employing feedback</p>
+<img data-src="./img/PID.svg" class="r-stretch quarto-figure-center"><p class="caption">PID</p><p><strong>PID</strong>, a control loop mechanism employing feedback</p>
 <ul>
 <li>Calculates an error <span class="math inline">\(e(t)\)</span> as the difference between a desired setpoint (SP) and a measured process variable (PV)
 <ul>
@@ -702,10 +787,10 @@ ELSE
 </ul>
 </section>
 
-<section id="section-2" class="title-slide slide level1 center">
+<section id="section-1" class="title-slide slide level1 center">
 <h1></h1>
 
-<img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/PID_en.svg/400px-PID_en.svg.png" class="r-stretch quarto-figure-center"><p class="caption">PID</p><p>Correction is based on 3 terms: <span class="math inline">\(u(t)=K_{p}e(t)+K_{i}\int_{0}^{t} e(\tau)\mathrm{d}\tau + K_{d}{\frac{\mathrm{d}e(t)}{\mathrm{d}t}}\)</span></p>
+<img data-src="./img/PID.svg" class="r-stretch quarto-figure-center"><p class="caption">PID</p><p>Correction is based on 3 terms: <span class="math inline">\(u(t)=K_{p}e(t)+K_{i}\int_{0}^{t} e(\tau)\mathrm{d}\tau + K_{d}{\frac{\mathrm{d}e(t)}{\mathrm{d}t}}\)</span></p>
 <ul>
 <li><strong>P</strong>: proportional to the <em>current value</em> of the <span class="math inline">\(SP − PV\)</span> error <span class="math inline">\(e(t)\)</span></li>
 <li><strong>I</strong>: integrates the <em>past values</em> of <span class="math inline">\(e(t)\)</span> over time to eliminate the residual error
@@ -739,43 +824,28 @@ ELSE
 <div class="columns">
 <div class="column" style="width:33%;">
 <p><strong>T0</strong></p>
+<p><img src="./img/single-wing.svg" style="height: 100px !important; display: block; margin-left: auto; margin-right: auto; width: 50%;"></p>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="https://github.com/user-attachments/assets/5cb9c2a0-61cb-4532-8d43-15f5ce0cdb7e"></p>
-<figcaption>Single Wing</figcaption>
-</figure>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="https://github.com/user-attachments/assets/6f648d9d-5c3e-4c24-b0e4-9ce30a6ec90d"></p>
+<p><img data-src="./img/t0-rev.svg"></p>
 <figcaption>Control Row (T0)</figcaption>
 </figure>
 </div>
 </div><div class="column" style="width:33%;">
 <p><strong>T1</strong></p>
+<p><img src="./img/single-wing.svg" style="height: 100px !important; display: block; margin-left: auto; margin-right: auto; width: 50%;"></p>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="https://github.com/user-attachments/assets/5cb9c2a0-61cb-4532-8d43-15f5ce0cdb7e"></p>
-<figcaption>Single Wing</figcaption>
-</figure>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="https://github.com/user-attachments/assets/cb80c32b-f892-4283-86a6-bae0793a0613"></p>
+<p><img data-src="./img/t1-rev.svg"></p>
 <figcaption>Managed Row (T1)</figcaption>
 </figure>
 </div>
 </div><div class="column" style="width:33%;">
 <p><strong>T2</strong></p>
+<p><img src="./img/double-wing.svg" style="height: 100px !important; display: block; margin-left: auto; margin-right: auto; width: 50%;"></p>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="https://github.com/user-attachments/assets/d3eed7d0-8001-47b2-a66d-d6ba16aa26db"></p>
-<figcaption>Double Wing</figcaption>
-</figure>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="https://github.com/user-attachments/assets/4c832868-2913-4f33-bf6f-bfcaf639e0ad"></p>
+<p><img data-src="./img/t2-rev.svg"></p>
 <figcaption>Managed Row (T2)</figcaption>
 </figure>
 </div>
@@ -786,7 +856,9 @@ ELSE
 <section id="water-consumption" class="title-slide slide level1 center">
 <h1>Water consumption</h1>
 
-<img data-src="https://github.com/user-attachments/assets/e4307c5b-e813-4699-9022-4b0e145f04f5" class="r-stretch quarto-figure-center"><p class="caption">T0 vs T1</p><table border="1" class="dataframe">
+<img data-src="./img/pluto-t0t1.svg" class="r-stretch quarto-figure-center"><p class="caption">T0 vs T1</p><div class="columns">
+<div class="column" style="width:60%;">
+<table border="1" class="dataframe">
 <thead>
 <tr>
 <th>
@@ -907,7 +979,10 @@ C1
 </tr>
 </tbody>
 </table>
+</div><div class="column" style="width:38%;">
 <p>Fruit quality results are discussed in <span class="citation" data-cites="quartieri2021effect">(<a href="#/references" role="doc-biblioref" onclick="">Quartieri et al. 2021</a>)</span> and <span class="citation" data-cites="baldi2023smart">(<a href="#/references" role="doc-biblioref" onclick="">Baldi et al. 2023</a>)</span></p>
+</div>
+</div>
 </section>
 
 
@@ -1041,6 +1116,9 @@ Baldi, E, M Quartieri, GN Larocca, M Golfarelli, M Francia, J Giovanelli, E Xylo
 <div id="ref-bittelli2015soil" class="csl-entry" role="listitem">
 Bittelli, Marco, Gaylon S Campbell, and Fausto Tomei. 2015. <em>Soil Physics with Python: Transport in the Soil-Plant-Atmosphere System</em>. OUP Oxford.
 </div>
+<div id="ref-bittelli2011criteria" class="csl-entry" role="listitem">
+Bittelli, Marco, Alberto Pistocchi, Fausto Tomei, Pier Paolo Roggero, Roberto Orsini, Marco Toderi, Gabriele Antolini, and Markus Flury. 2011. <span>“CRITERIA-3D: A Mechanistic Model for Surface and Subsurface Hydrology for Small Catchments.”</span> In <em>Soil Hydrology, Land Use and Agriculture: Measurement and Modelling</em>, 253–65. CAB International Wallingford UK.
+</div>
 <div id="ref-fersch2018synergies" class="csl-entry" role="listitem">
 Fersch, Benjamin, Thomas Jagdhuber, Martin Schrön, Ingo Völksch, and Marc Jäger. 2018. <span>“Synergies for Soil Moisture Retrieval Across Scales from Airborne Polarimetric SAR, Cosmic Ray Neutron Roving, and an in Situ Sensor Network.”</span> <em>Water Resources Research</em> 54 (11): 9364–83.
 </div>
@@ -1049,6 +1127,9 @@ Francia, Matteo, Joseph Giovanelli, and Matteo Golfarelli. 2022. <span>“Multi-
 </div>
 <div id="ref-judd1986water" class="csl-entry" role="listitem">
 Judd, MJ, KJ McAneney, and MCT Trought. 1986. <span>“Water Use by Sheltered Kiwifruit Under Advective Conditions.”</span> <em>New Zealand Journal of Agricultural Research</em> 29 (1): 83–92.
+</div>
+<div id="ref-komer2019hyperopt" class="csl-entry" role="listitem">
+Komer, Brent, James Bergstra, and Chris Eliasmith. 2019. <span>“Hyperopt-Sklearn.”</span> <em>Automated Machine Learning: Methods, Systems, Challenges</em>, 97–111.
 </div>
 <div id="ref-koyuncu2021construction" class="csl-entry" role="listitem">
 Koyuncu, Hakan, Burak Gunduz, and Baki Koyuncu. 2021. <span>“Construction of 3D Soil Moisture Maps in Agricultural Fields by Using Wireless Sensor Communication.”</span> <em>Gazi University Journal of Science</em> 34 (1): 84–98.

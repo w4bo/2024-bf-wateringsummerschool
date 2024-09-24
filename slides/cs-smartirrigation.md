@@ -525,8 +525,8 @@ We provide advice (recommendations) to technicians, who use (and adjust) the adv
 
 - *Pro*: it relies on the experience of the technician
 - *Con*:
+  - can be stuck in sub-optimal irrigations (e.g., the system never converges to the optimal scenario) and requires human intervention
   - does not scale out to many fields; controlling 6 fields already entails a lot of work
-  - can be stuck in sub-optimal irrigations (e.g., the system never converges to the optimal scenario)
 
 :::
 ::: {.column width="50%"}

@@ -718,8 +718,30 @@ Matteo Francia <br> DISI — University of Bologna <br> m.francia@unibo.it
 
 <section id="evaluation" class="title-slide slide level1 center">
 <h1>Evaluation</h1>
-
-<img data-src="./img/pluto-result.svg" class="r-stretch quarto-figure-center"><p class="caption">Comparing FA and FU</p></section>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Feature-unaware and feature-aware profiling <strong>are complementary</strong></p>
+<ul>
+<li><em>Feature-unaware</em> profiling allows the system to operate as soon as we have the sensors ready
+<ul>
+<li>It requires more sensors to be accurate since it assume that soil-moisture behaves linearly in the soil</li>
+<li>However, we cannot have too many sensors due to their economic costs or space constraints</li>
+</ul></li>
+<li><em>Feature-aware</em> profiling is more precise and can operate with any layout of sensors
+<ul>
+<li>However, it requires weeks of data to tune the simulator</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="./img/pluto-result.svg"></p>
+<figcaption>Comparing FA and FU</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
 
 
 
@@ -741,6 +763,10 @@ Matteo Francia <br> DISI — University of Bologna <br> m.francia@unibo.it
 <div class="column" style="width:50%;">
 <p><img data-src="./img/pluto-optimal.svg"></p>
 </div><div class="column" style="width:50%;">
+<ul>
+<li><strong>Red</strong>: optimal state</li>
+<li><em>Blue</em>: current state</li>
+</ul>
 <p><img data-src="./img/pluto-optimal2.svg"></p>
 </div>
 </div>
@@ -751,7 +777,14 @@ Matteo Francia <br> DISI — University of Bologna <br> m.francia@unibo.it
 <div class="columns">
 <div class="column" style="width:50%;">
 <p>Given the following algorithm</p>
-<p>IF ((#BlueCells + #LightBlueCells)/(#Cells) &lt; 0.50 &amp;&amp; (#BlueCells)/(#Cells) &lt; 0.25 in the last 12h) &amp;&amp; precipitations &lt; 7mm in the last 12h THEN Recommended water = Evapotranspiration (ET) of the day before ELSE Do nothing</p>
+<pre><code>IF
+    ((#BlueCells + #LightBlueCells)/(#Cells) &lt; 0.50 &amp;&amp;
+    (#BlueCells)/(#Cells) &lt; 0.25 in the last 12h) &amp;&amp;
+    precipitations &lt; 7mm in the last 12h
+THEN 
+    Recommended water = Evapotranspiration (ET) of the day before
+ELSE 
+    Do nothing</code></pre>
 <p>We provide advice (recommendations) to technicians, who use (and adjust) the advice according to their experience.</p>
 <ul>
 <li><em>Pro</em>: it relies on the experience of the technician</li>

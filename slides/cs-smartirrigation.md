@@ -789,9 +789,7 @@ Fruit quality results are discussed in [@quartieri2021effect] and [@baldi2023sma
 :::: {.columns}
 ::: {.column width="66%"}
 
-**Uncountable**:
-
-- Crop sustainability & smaller environmental footprint
+**Uncountable**: crop sustainability & smaller environmental footprint
 
 **Countable**:
 
@@ -803,7 +801,7 @@ Fruit quality results are discussed in [@quartieri2021effect] and [@baldi2023sma
 - *Fewer management issues*
 - *Smaller irrigation amount*
     - MR saved 44% of water during the whole campaign
-    - Max. saving in Jun and Sep: for the farmer, it is harder to estimate water demand
+    - Max. saving in Jun and Sep: when it is harder to estimate water demand
 - *Comparable (or even better) quality of the product*; e.g. in 2021:
     - Productivity of vines was unaffected by irrigation (32-39 kg/vine; 35-44 t/ha)
     - CR's fruits appeared greener (H angle 105) than fruits from MR (H angle 102)

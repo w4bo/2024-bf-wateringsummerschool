@@ -461,9 +461,9 @@ Matteo Francia <br> DISI — University of Bologna <br> m.francia@unibo.it
 <p>… involves two actors</p>
 <ul>
 <li><em>Farmer</em>: provides knowledge about the field and daily feedbacks</li>
-<li><em>Technician</em>: defines the optimal status and check the system’s behavior</li>
+<li><em>Technician</em>: defines the optimal status and checks the system’s behavior</li>
 </ul>
-<p>… requires and IoT environment</p>
+<p>… and requires an IoT environment</p>
 <ul>
 <li><em>Sensors</em> (mandatory): provide real-time knowledge</li>
 <li><em>Actionable water pump</em>: enables the smart irrigation
@@ -545,7 +545,7 @@ Matteo Francia <br> DISI — University of Bologna <br> m.francia@unibo.it
 </div>
 </div>
 <ul>
-<li>If watered volume is symmetric along the row, a 2D sensor grid is sufficient to represent the soil volume</li>
+<li>If the watered volume is symmetric along the row, a 2D sensor grid is sufficient to represent the soil volume</li>
 <li>If moisture variations take place along the row too, a 3D grid of sensors is required
 <ul>
 <li>E.g., too sparse drippers</li>
@@ -572,12 +572,12 @@ Matteo Francia <br> DISI — University of Bologna <br> m.francia@unibo.it
 <ul>
 <li>The column (0, *) is under the dripper</li>
 </ul></li>
-<li>Each columns has 3 sensors located at 3 depths (e.g., 20/40/60cm)</li>
+<li>Each column has 3 sensors located at 3 depths (e.g., 20/40/60cm)</li>
 </ul>
 <p>Dataset</p>
 <ul>
-<li><em>In two years, we collected 16GB data (as of 2022-08-30)</em></li>
-<li><em>In four years, we collected 64GB data (as of 2024-08-30)</em></li>
+<li><em>In two years, we collected 16GB of data (as of 2022-08-30)</em></li>
+<li><em>In four years, we collected 64GB of data (as of 2024-08-30)</em></li>
 </ul>
 </div><div class="column" style="width:40%;">
 <div class="quarto-figure quarto-figure-center">
@@ -652,7 +652,7 @@ Matteo Francia <br> DISI — University of Bologna <br> m.francia@unibo.it
 <li>Inputs
 <ul>
 <li>The <em>soil texture</em></li>
-<li>“Default” settings for the <em>kiwi-plant</em> (e.g., shape of the tree roots / LAI)</li>
+<li>“Default” settings for the <em>kiwi-plant</em> (e.g., the shape of the tree roots / LAI)</li>
 <li><em>Watering system</em> based on a single dripper</li>
 <li><em>Weather conditions</em> from ARPAE</li>
 <li>Different <em>watering patterns</em> (by changing watering intervals and the amount of supplied water)</li>
@@ -684,7 +684,7 @@ Matteo Francia <br> DISI — University of Bologna <br> m.francia@unibo.it
 <section id="artificial-neural-networks" class="title-slide slide level1 center">
 <h1>Artificial Neural Networks</h1>
 
-<img data-src="./img/pluto-nn.svg" class="r-stretch"><p>The hyper parameters (structure/learning rates) are set through a hyper-parameter tuning process</p>
+<img data-src="./img/pluto-nn.svg" class="r-stretch"><p>The hyperparameters (structure/learning rates) are set through a hyper-parameter tuning process</p>
 <ul>
 <li><em>HyperOpt</em> <span class="citation" data-cites="komer2019hyperopt">(<a href="#/references" role="doc-biblioref" onclick="">Komer, Bergstra, and Eliasmith 2019</a>)</span>: state-of-the-art optimization technique to explore the huge search space of hyper-parameters</li>
 </ul>
@@ -751,20 +751,13 @@ Matteo Francia <br> DISI — University of Bologna <br> m.francia@unibo.it
 <div class="columns">
 <div class="column" style="width:50%;">
 <p>Given the following algorithm</p>
-<pre><code>IF
-   ((#BlueCells + #LightBlueCells)/(#Cells) &lt; 0.50 &amp;&amp;
-   (#BlueCells)/(#Cells) &lt; 0.25 in the last 12h) &amp;&amp;
-   precipitations &lt; 7mm in the last 12h
-THEN 
-    Recommended water = Evapotranspiration (ET) of the day before
-ELSE 
-    Do nothing</code></pre>
-<p>We provide advices (recommendations) to technicians, who use (and adjust) the advice according their experience.</p>
+<p>IF ((#BlueCells + #LightBlueCells)/(#Cells) &lt; 0.50 &amp;&amp; (#BlueCells)/(#Cells) &lt; 0.25 in the last 12h) &amp;&amp; precipitations &lt; 7mm in the last 12h THEN Recommended water = Evapotranspiration (ET) of the day before ELSE Do nothing</p>
+<p>We provide advice (recommendations) to technicians, who use (and adjust) the advice according to their experience.</p>
 <ul>
 <li><em>Pro</em>: it relies on the experience of the technician</li>
 <li><em>Con</em>:
 <ul>
-<li>does not scale out to many fields; controlling 6 fields already entails lot of work</li>
+<li>does not scale out to many fields; controlling 6 fields already entails a lot of work</li>
 <li>can be stuck in sub-optimal irrigations (e.g., the system never converges to the optimal scenario)</li>
 </ul></li>
 </ul>
@@ -1006,7 +999,7 @@ C1
 <li><em>Smaller irrigation amount</em>
 <ul>
 <li>MR saved 44% of water during the whole campaign</li>
-<li>Max. saving in Jun and Sep: for the farmer is harder to estimate water demand</li>
+<li>Max. saving in Jun and Sep: for the farmer, it is harder to estimate water demand</li>
 </ul></li>
 <li><em>Comparable (or even better) quality of the product</em>; e.g.&nbsp;in 2021:
 <ul>
@@ -1089,7 +1082,7 @@ C1
 <ul>
 <li>While profiling looks at the current state of soil moisture, how will soil moisture change — for instance — in a week?
 <ul>
-<li>Soil profiles are snapshots of soil moisture, we should learn from time series of snapshots</li>
+<li>Soil profiles are snapshots of soil moisture, we should learn from a time series of snapshots</li>
 <li>Features to consider
 <ul>
 <li>Soil conditions</li>

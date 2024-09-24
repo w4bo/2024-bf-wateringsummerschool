@@ -10,9 +10,6 @@ subtitle: A Case Study
 
 {{< include _cs-smartirrigation.md >}}
 
-:::: {.columns}
-::: {.column width="58%"}
-
 Matteo Francia
 
 - Assistant professor at DISI - University of Bologna
@@ -24,11 +21,9 @@ Main background:
 - Big data and machine learning
 - ... with *applications* to the field of Precision Agriculture
 
-:::
-::: {.column width="42%"}
+These slides are the result of a shared effort, many thanks to:
 
-:::
-::::
+- Prof. Matteo Golfarelli, Dott. Manuele Pasini, Dott. Alex Baiardi
  
 <img src="./img/unibo.svg" style="box-shadow: none !important; position: fixed !important; top: -350px !important; right: -300px !important; ; max-height: 500px !important; max-width: 500px !important" />
 

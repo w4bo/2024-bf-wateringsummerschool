@@ -1,0 +1,3091 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="SvgjsSvg198669"
+   width="468.96597"
+   height="322.51709"
+   version="1.1"
+   class="apexcharts-svg"
+   sodipodi:docname="t1.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <defs
+     id="defs44">
+    <clipPath
+       id="clip0">
+      <rect
+         x="780"
+         y="480"
+         width="498"
+         height="350"
+         id="rect1" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="namedview44"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="3.4051864"
+     inkscape:cx="297.63422"
+     inkscape:cy="2.789862"
+     inkscape:window-width="2880"
+     inkscape:window-height="1526"
+     inkscape:window-x="-11"
+     inkscape:window-y="694"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="SvgjsSvg198669" />
+  <foreignObject
+     x="0"
+     y="0"
+     width="617"
+     height="243">
+    <xhtml:div
+       class="apexcharts-legend"
+       style="max-height: 121.5px;" />
+  </foreignObject>
+  <g
+     clip-path="url(#clip0)"
+     transform="translate(-794.74072,-491.71143)"
+     id="g224">
+    <text
+       fill="#373d3f"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="21px"
+       transform="translate(805.257,507)"
+       id="text12">Interpolazione<tspan
+   font-size="21px"
+   x="147.75"
+   y="0"
+   id="tspan1">bilineare</tspan><tspan
+   font-size="21px"
+   x="239.75"
+   y="0"
+   id="tspan2">04/07/2024 22:00:00</tspan><tspan
+   font-weight="400"
+   font-size="18px"
+   x="-0.244812"
+   y="54"
+   id="tspan3">0</tspan><tspan
+   font-weight="400"
+   font-size="18px"
+   x="-10.7448"
+   y="77"
+   id="tspan4">20</tspan><tspan
+   font-weight="400"
+   font-size="18px"
+   x="-10.7448"
+   y="100"
+   id="tspan5">25</tspan><tspan
+   font-weight="400"
+   font-size="18px"
+   x="-10.7448"
+   y="123"
+   id="tspan6">30</tspan><tspan
+   font-weight="400"
+   font-size="18px"
+   x="-10.7448"
+   y="146"
+   id="tspan7">35</tspan><tspan
+   font-weight="400"
+   font-size="18px"
+   x="-10.7448"
+   y="169"
+   id="tspan8">40</tspan><tspan
+   font-weight="400"
+   font-size="18px"
+   x="-10.7448"
+   y="192"
+   id="tspan9">45</tspan><tspan
+   font-weight="400"
+   font-size="18px"
+   x="-10.7448"
+   y="216"
+   id="tspan10">50</tspan><tspan
+   font-weight="400"
+   font-size="18px"
+   x="-10.7448"
+   y="239"
+   id="tspan11">55</tspan><tspan
+   font-weight="400"
+   font-size="18px"
+   x="-10.7448"
+   y="262"
+   id="tspan12">60</tspan></text>
+    <path
+       d="m 823.002,555 h 9"
+       stroke="#e0e0e0"
+       stroke-width="1.5"
+       stroke-miterlimit="8"
+       stroke-dasharray="none"
+       fill="none"
+       fill-rule="evenodd"
+       id="path12" />
+    <path
+       d="m 823.002,578 h 9"
+       stroke="#e0e0e0"
+       stroke-width="1.5"
+       stroke-miterlimit="8"
+       stroke-dasharray="none"
+       fill="none"
+       fill-rule="evenodd"
+       id="path13" />
+    <path
+       d="m 823.002,602 h 9"
+       stroke="#e0e0e0"
+       stroke-width="1.5"
+       stroke-miterlimit="8"
+       stroke-dasharray="none"
+       fill="none"
+       fill-rule="evenodd"
+       id="path14" />
+    <path
+       d="m 823.002,625 h 9"
+       stroke="#e0e0e0"
+       stroke-width="1.5"
+       stroke-miterlimit="8"
+       stroke-dasharray="none"
+       fill="none"
+       fill-rule="evenodd"
+       id="path15" />
+    <path
+       d="m 823.002,648 h 9"
+       stroke="#e0e0e0"
+       stroke-width="1.5"
+       stroke-miterlimit="8"
+       stroke-dasharray="none"
+       fill="none"
+       fill-rule="evenodd"
+       id="path16" />
+    <path
+       d="m 823.002,671 h 9"
+       stroke="#e0e0e0"
+       stroke-width="1.5"
+       stroke-miterlimit="8"
+       stroke-dasharray="none"
+       fill="none"
+       fill-rule="evenodd"
+       id="path17" />
+    <path
+       d="m 823.002,694 h 9"
+       stroke="#e0e0e0"
+       stroke-width="1.5"
+       stroke-miterlimit="8"
+       stroke-dasharray="none"
+       fill="none"
+       fill-rule="evenodd"
+       id="path18" />
+    <path
+       d="m 823.002,717 h 9"
+       stroke="#e0e0e0"
+       stroke-width="1.5"
+       stroke-miterlimit="8"
+       stroke-dasharray="none"
+       fill="none"
+       fill-rule="evenodd"
+       id="path19" />
+    <path
+       d="m 823.002,741 h 9"
+       stroke="#e0e0e0"
+       stroke-width="1.5"
+       stroke-miterlimit="8"
+       stroke-dasharray="none"
+       fill="none"
+       fill-rule="evenodd"
+       id="path20" />
+    <path
+       d="m 823.002,764 h 9"
+       stroke="#e0e0e0"
+       stroke-width="1.5"
+       stroke-miterlimit="8"
+       stroke-dasharray="none"
+       fill="none"
+       fill-rule="evenodd"
+       id="path21" />
+    <path
+       d="m 858.004,777.008 v 9"
+       stroke="#e0e0e0"
+       stroke-width="1.5"
+       stroke-miterlimit="8"
+       stroke-dasharray="none"
+       fill="none"
+       fill-rule="evenodd"
+       id="path22" />
+    <path
+       d="m 883.004,777.008 v 9"
+       stroke="#e0e0e0"
+       stroke-width="1.5"
+       stroke-miterlimit="8"
+       stroke-dasharray="none"
+       fill="none"
+       fill-rule="evenodd"
+       id="path23" />
+    <path
+       d="m 908.009,777.008 v 9"
+       stroke="#e0e0e0"
+       stroke-width="1.5"
+       stroke-miterlimit="8"
+       stroke-dasharray="none"
+       fill="none"
+       fill-rule="evenodd"
+       id="path24" />
+    <path
+       d="m 934.004,777.008 v 9"
+       stroke="#e0e0e0"
+       stroke-width="1.5"
+       stroke-miterlimit="8"
+       stroke-dasharray="none"
+       fill="none"
+       fill-rule="evenodd"
+       id="path25" />
+    <path
+       d="m 959.004,777.008 v 9"
+       stroke="#e0e0e0"
+       stroke-width="1.5"
+       stroke-miterlimit="8"
+       stroke-dasharray="none"
+       fill="none"
+       fill-rule="evenodd"
+       id="path26" />
+    <path
+       d="m 984.009,777.008 v 9"
+       stroke="#e0e0e0"
+       stroke-width="1.5"
+       stroke-miterlimit="8"
+       stroke-dasharray="none"
+       fill="none"
+       fill-rule="evenodd"
+       id="path27" />
+    <path
+       d="m 1009.01,777.008 v 9"
+       stroke="#e0e0e0"
+       stroke-width="1.5"
+       stroke-miterlimit="8"
+       stroke-dasharray="none"
+       fill="none"
+       fill-rule="evenodd"
+       id="path28" />
+    <path
+       d="m 1035,777.008 v 9"
+       stroke="#e0e0e0"
+       stroke-width="1.5"
+       stroke-miterlimit="8"
+       stroke-dasharray="none"
+       fill="none"
+       fill-rule="evenodd"
+       id="path29" />
+    <path
+       d="m 1060,777.008 v 9"
+       stroke="#e0e0e0"
+       stroke-width="1.5"
+       stroke-miterlimit="8"
+       stroke-dasharray="none"
+       fill="none"
+       fill-rule="evenodd"
+       id="path30" />
+    <path
+       d="m 1085.01,777.008 v 9"
+       stroke="#e0e0e0"
+       stroke-width="1.5"
+       stroke-miterlimit="8"
+       stroke-dasharray="none"
+       fill="none"
+       fill-rule="evenodd"
+       id="path31" />
+    <path
+       d="m 1111,777.008 v 9"
+       stroke="#e0e0e0"
+       stroke-width="1.5"
+       stroke-miterlimit="8"
+       stroke-dasharray="none"
+       fill="none"
+       fill-rule="evenodd"
+       id="path32" />
+    <path
+       d="m 1136,777.008 v 9"
+       stroke="#e0e0e0"
+       stroke-width="1.5"
+       stroke-miterlimit="8"
+       stroke-dasharray="none"
+       fill="none"
+       fill-rule="evenodd"
+       id="path33" />
+    <path
+       d="m 1161.01,777.008 v 9"
+       stroke="#e0e0e0"
+       stroke-width="1.5"
+       stroke-miterlimit="8"
+       stroke-dasharray="none"
+       fill="none"
+       fill-rule="evenodd"
+       id="path34" />
+    <path
+       d="m 1186.01,777.008 v 9"
+       stroke="#e0e0e0"
+       stroke-width="1.5"
+       stroke-miterlimit="8"
+       stroke-dasharray="none"
+       fill="none"
+       fill-rule="evenodd"
+       id="path35" />
+    <path
+       d="m 1212,777.008 v 9"
+       stroke="#e0e0e0"
+       stroke-width="1.5"
+       stroke-miterlimit="8"
+       stroke-dasharray="none"
+       fill="none"
+       fill-rule="evenodd"
+       id="path36" />
+    <path
+       d="m 1237,777.008 v 9"
+       stroke="#e0e0e0"
+       stroke-width="1.5"
+       stroke-miterlimit="8"
+       stroke-dasharray="none"
+       fill="none"
+       fill-rule="evenodd"
+       id="path37" />
+    <path
+       d="m 1262.01,777.008 v 9"
+       stroke="#e0e0e0"
+       stroke-width="1.5"
+       stroke-miterlimit="8"
+       stroke-dasharray="none"
+       fill="none"
+       fill-rule="evenodd"
+       id="path38" />
+    <path
+       d="m 832.507,544.508 h 26 v 23 h -26 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#053061"
+       fill-rule="evenodd"
+       id="path39" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(839.755,561)"
+       id="text39">G</text>
+    <path
+       d="m 858.506,544.508 h 25.001 v 23 h -25.001 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#ffffff"
+       fill-rule="evenodd"
+       id="path40" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(866.543,561)"
+       id="text40">1</text>
+    <path
+       d="m 883.506,544.508 h 25.001 v 23 h -25.001 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#ffffff"
+       fill-rule="evenodd"
+       id="path41" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(891.83,561)"
+       id="text41">1</text>
+    <path
+       d="m 908.507,544.508 h 26 v 23 h -26 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#ffffff"
+       fill-rule="evenodd"
+       id="path42" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(917.118,561)"
+       id="text42">1</text>
+    <path
+       d="m 934.506,544.508 h 25.001 v 23 h -25.001 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#ffffff"
+       fill-rule="evenodd"
+       id="path43" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(942.405,561)"
+       id="text43">1</text>
+    <path
+       d="m 959.506,544.508 h 25.001 v 23 h -25.001 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#ffffff"
+       fill-rule="evenodd"
+       id="path44" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(967.693,561)"
+       id="text44">1</text>
+    <path
+       d="m 984.506,544.508 h 25.004 v 23 h -25.004 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#ffffff"
+       fill-rule="evenodd"
+       id="path45" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(992.98,561)"
+       id="text45">1</text>
+    <path
+       d="m 1009.51,544.508 h 26 v 23 h -26 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#ffffff"
+       fill-rule="evenodd"
+       id="path46" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1018.27,561)"
+       id="text46">1</text>
+    <path
+       d="m 1035.51,544.508 h 25 v 23 h -25 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#ffffff"
+       fill-rule="evenodd"
+       id="path47" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1043.56,561)"
+       id="text47">1</text>
+    <path
+       d="m 1060.51,544.508 h 25 v 23 h -25 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#ffffff"
+       fill-rule="evenodd"
+       id="path48" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1068.84,561)"
+       id="text48">1</text>
+    <path
+       d="m 1085.51,544.508 h 26 v 23 h -26 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#ffffff"
+       fill-rule="evenodd"
+       id="path49" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1094.13,561)"
+       id="text49">1</text>
+    <path
+       d="m 1111.51,544.508 h 25 v 23 h -25 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#ffffff"
+       fill-rule="evenodd"
+       id="path50" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1119.42,561)"
+       id="text50">1</text>
+    <path
+       d="m 1136.51,544.508 h 25 v 23 h -25 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#ffffff"
+       fill-rule="evenodd"
+       id="path51" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1144.71,561)"
+       id="text51">1</text>
+    <path
+       d="m 1161.51,544.508 h 25 v 23 h -25 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#ffffff"
+       fill-rule="evenodd"
+       id="path52" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1169.99,561)"
+       id="text52">1</text>
+    <path
+       d="m 1186.51,544.508 h 26 v 23 h -26 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#ffffff"
+       fill-rule="evenodd"
+       id="path53" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1195.28,561)"
+       id="text53">1</text>
+    <path
+       d="m 1212.51,544.508 h 25 v 23 h -25 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#ffffff"
+       fill-rule="evenodd"
+       id="path54" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1220.57,561)"
+       id="text54">1</text>
+    <path
+       d="m 1237.51,544.508 h 25 v 23 h -25 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#ffffff"
+       fill-rule="evenodd"
+       id="path55" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1245.86,561)"
+       id="text56">1<tspan
+   font-size="14px"
+   x="-428.952"
+   y="23"
+   id="tspan55">-</tspan>331<tspan
+   font-size="14px"
+   x="-434.388"
+   y="23"
+   id="tspan56">-</tspan>67</text>
+    <path
+       d="m 832.507,567.508 h 26 v 23 h -26 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#053061"
+       fill-rule="evenodd"
+       id="path56" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(835.255,584)"
+       id="text57">-26</text>
+    <path
+       d="m 858.506,567.508 h 25.001 v 23 h -25.001 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#053061"
+       fill-rule="evenodd"
+       id="path57" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(860.543,584)"
+       id="text58">-25</text>
+    <path
+       d="m 883.506,567.508 h 25.001 v 23 h -25.001 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#053061"
+       fill-rule="evenodd"
+       id="path58" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(885.83,584)"
+       id="text59">-25</text>
+    <path
+       d="m 908.507,567.508 h 26 v 23 h -26 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#053061"
+       fill-rule="evenodd"
+       id="path59" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(911.118,584)"
+       id="text60">-24</text>
+    <path
+       d="m 934.506,567.508 h 25.001 v 23 h -25.001 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#053061"
+       fill-rule="evenodd"
+       id="path60" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(936.405,584)"
+       id="text61">-23</text>
+    <path
+       d="m 959.506,567.508 h 25.001 v 23 h -25.001 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#053061"
+       fill-rule="evenodd"
+       id="path61" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(961.693,584)"
+       id="text62">-22</text>
+    <path
+       d="m 984.506,567.508 h 25.004 v 23 h -25.004 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#337cb7"
+       fill-rule="evenodd"
+       id="path62" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(986.98,584)"
+       id="text63">-42</text>
+    <path
+       d="m 1009.51,567.508 h 26 v 23 h -26 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#337cb7"
+       fill-rule="evenodd"
+       id="path63" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1012.27,584)"
+       id="text64">-61</text>
+    <path
+       d="m 1035.51,567.508 h 25 v 23 h -25 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#337cb7"
+       fill-rule="evenodd"
+       id="path64" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1037.56,584)"
+       id="text65">-81</text>
+    <path
+       d="m 1060.51,567.508 h 25 v 23 h -25 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#8fc2dd"
+       fill-rule="evenodd"
+       id="path65" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1059.09,584)"
+       id="text66">-100</text>
+    <path
+       d="m 1085.51,567.508 h 26 v 23 h -26 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#8fc2dd"
+       fill-rule="evenodd"
+       id="path66" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1084.38,584)"
+       id="text67">-120</text>
+    <path
+       d="m 1111.51,567.508 h 25 v 23 h -25 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#8fc2dd"
+       fill-rule="evenodd"
+       id="path67" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1109.67,584)"
+       id="text68">-126</text>
+    <path
+       d="m 1136.51,567.508 h 25 v 23 h -25 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#8fc2dd"
+       fill-rule="evenodd"
+       id="path68" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1134.96,584)"
+       id="text69">-132</text>
+    <path
+       d="m 1161.51,567.508 h 25 v 23 h -25 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#8fc2dd"
+       fill-rule="evenodd"
+       id="path69" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1160.24,584)"
+       id="text70">-139</text>
+    <path
+       d="m 1186.51,567.508 h 26 v 23 h -26 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#8fc2dd"
+       fill-rule="evenodd"
+       id="path70" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1185.53,584)"
+       id="text71">-145</text>
+    <path
+       d="m 1212.51,567.508 h 25 v 23 h -25 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#8fc2dd"
+       fill-rule="evenodd"
+       id="path71" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1210.82,584)"
+       id="text72">-152</text>
+    <path
+       d="m 1237.51,567.508 h 25 v 23 h -25 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#8fc2dd"
+       fill-rule="evenodd"
+       id="path72" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1236.11,584)"
+       id="text73">-158<tspan
+   font-size="14px"
+   x="-419.202"
+   y="23"
+   id="tspan72">-</tspan>362<tspan
+   font-size="14px"
+   x="-424.638"
+   y="23"
+   id="tspan73">-</tspan>56</text>
+    <path
+       d="m 832.507,590.508 h 26 v 23 h -26 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#053061"
+       fill-rule="evenodd"
+       id="path73" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(835.255,607)"
+       id="text74">-25</text>
+    <path
+       d="m 858.506,590.508 h 25.001 v 23 h -25.001 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#337cb7"
+       fill-rule="evenodd"
+       id="path74" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(860.543,607)"
+       id="text75">-34</text>
+    <path
+       d="m 883.506,590.508 h 25.001 v 23 h -25.001 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#337cb7"
+       fill-rule="evenodd"
+       id="path75" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(885.83,607)"
+       id="text76">-43</text>
+    <path
+       d="m 908.507,590.508 h 26 v 23 h -26 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#337cb7"
+       fill-rule="evenodd"
+       id="path76" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(911.118,607)"
+       id="text77">-52</text>
+    <path
+       d="m 934.506,590.508 h 25.001 v 23 h -25.001 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#337cb7"
+       fill-rule="evenodd"
+       id="path77" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(936.405,607)"
+       id="text78">-61</text>
+    <path
+       d="m 959.506,590.508 h 25.001 v 23 h -25.001 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#337cb7"
+       fill-rule="evenodd"
+       id="path78" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(961.693,607)"
+       id="text79">-69</text>
+    <path
+       d="m 984.506,590.508 h 25.004 v 23 h -25.004 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#337cb7"
+       fill-rule="evenodd"
+       id="path79" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(986.98,607)"
+       id="text80">-81</text>
+    <path
+       d="m 1009.51,590.508 h 26 v 23 h -26 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#337cb7"
+       fill-rule="evenodd"
+       id="path80" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1012.27,607)"
+       id="text81">-93</text>
+    <path
+       d="m 1035.51,590.508 h 25 v 23 h -25 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#8fc2dd"
+       fill-rule="evenodd"
+       id="path81" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1033.81,607)"
+       id="text82">-105</text>
+    <path
+       d="m 1060.51,590.508 h 25 v 23 h -25 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#8fc2dd"
+       fill-rule="evenodd"
+       id="path82" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1059.09,607)"
+       id="text83">-116</text>
+    <path
+       d="m 1085.51,590.508 h 26 v 23 h -26 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#8fc2dd"
+       fill-rule="evenodd"
+       id="path83" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1084.38,607)"
+       id="text84">-128</text>
+    <path
+       d="m 1111.51,590.508 h 25 v 23 h -25 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#8fc2dd"
+       fill-rule="evenodd"
+       id="path84" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1109.67,607)"
+       id="text85">-130</text>
+    <path
+       d="m 1136.51,590.508 h 25 v 23 h -25 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#8fc2dd"
+       fill-rule="evenodd"
+       id="path85" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1134.96,607)"
+       id="text86">-132</text>
+    <path
+       d="m 1161.51,590.508 h 25 v 23 h -25 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#8fc2dd"
+       fill-rule="evenodd"
+       id="path86" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1160.24,607)"
+       id="text87">-134</text>
+    <path
+       d="m 1186.51,590.508 h 26 v 23 h -26 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#8fc2dd"
+       fill-rule="evenodd"
+       id="path87" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1185.53,607)"
+       id="text88">-136</text>
+    <path
+       d="m 1212.51,590.508 h 25 v 23 h -25 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#8fc2dd"
+       fill-rule="evenodd"
+       id="path88" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1210.82,607)"
+       id="text89">-138</text>
+    <path
+       d="m 1237.51,590.508 h 25 v 23 h -25 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#8fc2dd"
+       fill-rule="evenodd"
+       id="path89" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1236.11,607)"
+       id="text90">-140<tspan
+   font-size="14px"
+   x="-419.202"
+   y="23"
+   id="tspan89">-</tspan>393<tspan
+   font-size="14px"
+   x="-424.638"
+   y="23"
+   id="tspan90">-</tspan>45</text>
+    <path
+       d="m 832.507,613.508 h 26 v 23 h -26 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#053061"
+       fill-rule="evenodd"
+       id="path90" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(835.255,630)"
+       id="text91">-25</text>
+    <path
+       d="m 858.506,613.508 h 25.001 v 23 h -25.001 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#337cb7"
+       fill-rule="evenodd"
+       id="path91" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(860.543,630)"
+       id="text92">-43</text>
+    <path
+       d="m 883.506,613.508 h 25.001 v 23 h -25.001 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#337cb7"
+       fill-rule="evenodd"
+       id="path92" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(885.83,630)"
+       id="text93">-61</text>
+    <path
+       d="m 908.507,613.508 h 26 v 23 h -26 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#337cb7"
+       fill-rule="evenodd"
+       id="path93" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(911.118,630)"
+       id="text94">-80</text>
+    <path
+       d="m 934.506,613.508 h 25.001 v 23 h -25.001 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#337cb7"
+       fill-rule="evenodd"
+       id="path94" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(936.405,630)"
+       id="text95">-98</text>
+    <path
+       d="m 959.506,613.508 h 25.001 v 23 h -25.001 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#8fc2dd"
+       fill-rule="evenodd"
+       id="path95" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(957.943,630)"
+       id="text96">-116</text>
+    <path
+       d="m 984.506,613.508 h 25.004 v 23 h -25.004 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#8fc2dd"
+       fill-rule="evenodd"
+       id="path96" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(983.231,630)"
+       id="text97">-120</text>
+    <path
+       d="m 1009.51,613.508 h 26 v 23 h -26 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#8fc2dd"
+       fill-rule="evenodd"
+       id="path97" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1008.52,630)"
+       id="text98">-124</text>
+    <path
+       d="m 1035.51,613.508 h 25 v 23 h -25 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#8fc2dd"
+       fill-rule="evenodd"
+       id="path98" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1033.81,630)"
+       id="text99">-128</text>
+    <path
+       d="m 1060.51,613.508 h 25 v 23 h -25 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#8fc2dd"
+       fill-rule="evenodd"
+       id="path99" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1059.09,630)"
+       id="text100">-132</text>
+    <path
+       d="m 1085.51,613.508 h 26 v 23 h -26 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#8fc2dd"
+       fill-rule="evenodd"
+       id="path100" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1084.38,630)"
+       id="text101">-136</text>
+    <path
+       d="m 1111.51,613.508 h 25 v 23 h -25 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#8fc2dd"
+       fill-rule="evenodd"
+       id="path101" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1109.67,630)"
+       id="text102">-134</text>
+    <path
+       d="m 1136.51,613.508 h 25 v 23 h -25 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#8fc2dd"
+       fill-rule="evenodd"
+       id="path102" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1134.96,630)"
+       id="text103">-131</text>
+    <path
+       d="m 1161.51,613.508 h 25 v 23 h -25 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#8fc2dd"
+       fill-rule="evenodd"
+       id="path103" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1160.24,630)"
+       id="text104">-129</text>
+    <path
+       d="m 1186.51,613.508 h 26 v 23 h -26 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#8fc2dd"
+       fill-rule="evenodd"
+       id="path104" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1185.53,630)"
+       id="text105">-126</text>
+    <path
+       d="m 1212.51,613.508 h 25 v 23 h -25 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#8fc2dd"
+       fill-rule="evenodd"
+       id="path105" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1210.82,630)"
+       id="text106">-124</text>
+    <path
+       d="m 1237.51,613.508 h 25 v 23 h -25 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#8fc2dd"
+       fill-rule="evenodd"
+       id="path106" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1236.11,630)"
+       id="text107">-121<tspan
+   font-size="14px"
+   x="-419.202"
+   y="23"
+   id="tspan106">-</tspan>424<tspan
+   font-size="14px"
+   x="-424.638"
+   y="23"
+   id="tspan107">-</tspan>34</text>
+    <path
+       d="m 832.507,636.508 h 26 v 24 h -26 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#053061"
+       fill-rule="evenodd"
+       id="path107" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(835.255,653)"
+       id="text108">-24</text>
+    <path
+       d="m 858.506,636.508 h 25.001 v 24 h -25.001 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#337cb7"
+       fill-rule="evenodd"
+       id="path108" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(860.543,653)"
+       id="text109">-52</text>
+    <path
+       d="m 883.506,636.508 h 25.001 v 24 h -25.001 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#337cb7"
+       fill-rule="evenodd"
+       id="path109" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(885.83,653)"
+       id="text110">-80</text>
+    <path
+       d="m 908.507,636.508 h 26 v 24 h -26 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#8fc2dd"
+       fill-rule="evenodd"
+       id="path110" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(907.368,653)"
+       id="text111">-108</text>
+    <path
+       d="m 934.506,636.508 h 25.001 v 24 h -25.001 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#8fc2dd"
+       fill-rule="evenodd"
+       id="path111" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(932.655,653)"
+       id="text112">-135</text>
+    <path
+       d="m 959.506,636.508 h 25.001 v 24 h -25.001 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#8fc2dd"
+       fill-rule="evenodd"
+       id="path112" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(957.943,653)"
+       id="text113">-163</text>
+    <path
+       d="m 984.506,636.508 h 25.004 v 24 h -25.004 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#8fc2dd"
+       fill-rule="evenodd"
+       id="path113" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(983.231,653)"
+       id="text114">-159</text>
+    <path
+       d="m 1009.51,636.508 h 26 v 24 h -26 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#8fc2dd"
+       fill-rule="evenodd"
+       id="path114" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1008.52,653)"
+       id="text115">-156</text>
+    <path
+       d="m 1035.51,636.508 h 25 v 24 h -25 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#8fc2dd"
+       fill-rule="evenodd"
+       id="path115" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1033.81,653)"
+       id="text116">-152</text>
+    <path
+       d="m 1060.51,636.508 h 25 v 24 h -25 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#8fc2dd"
+       fill-rule="evenodd"
+       id="path116" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1059.09,653)"
+       id="text117">-148</text>
+    <path
+       d="m 1085.51,636.508 h 26 v 24 h -26 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#8fc2dd"
+       fill-rule="evenodd"
+       id="path117" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1084.38,653)"
+       id="text118">-145</text>
+    <path
+       d="m 1111.51,636.508 h 25 v 24 h -25 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#8fc2dd"
+       fill-rule="evenodd"
+       id="path118" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1109.67,653)"
+       id="text119">-138</text>
+    <path
+       d="m 1136.51,636.508 h 25 v 24 h -25 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#8fc2dd"
+       fill-rule="evenodd"
+       id="path119" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1134.96,653)"
+       id="text120">-131</text>
+    <path
+       d="m 1161.51,636.508 h 25 v 24 h -25 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#8fc2dd"
+       fill-rule="evenodd"
+       id="path120" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1160.24,653)"
+       id="text121">-124</text>
+    <path
+       d="m 1186.51,636.508 h 26 v 24 h -26 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#8fc2dd"
+       fill-rule="evenodd"
+       id="path121" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1185.53,653)"
+       id="text122">-117</text>
+    <path
+       d="m 1212.51,636.508 h 25 v 24 h -25 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#8fc2dd"
+       fill-rule="evenodd"
+       id="path122" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1210.82,653)"
+       id="text123">-110</text>
+    <path
+       d="m 1237.51,636.508 h 25 v 24 h -25 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#8fc2dd"
+       fill-rule="evenodd"
+       id="path123" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1236.11,653)"
+       id="text124">-103<tspan
+   font-size="14px"
+   x="-419.202"
+   y="24"
+   id="tspan123">-</tspan>455<tspan
+   font-size="14px"
+   x="-424.638"
+   y="24"
+   id="tspan124">-</tspan>23</text>
+    <path
+       d="m 832.507,660.508 h 26 v 23 h -26 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#053061"
+       fill-rule="evenodd"
+       id="path124" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(835.255,677)"
+       id="text125">-23</text>
+    <path
+       d="m 858.506,660.508 h 25.001 v 23 h -25.001 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#337cb7"
+       fill-rule="evenodd"
+       id="path125" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(860.543,677)"
+       id="text126">-61</text>
+    <path
+       d="m 883.506,660.508 h 25.001 v 23 h -25.001 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#337cb7"
+       fill-rule="evenodd"
+       id="path126" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(885.83,677)"
+       id="text127">-98</text>
+    <path
+       d="m 908.507,660.508 h 26 v 23 h -26 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#8fc2dd"
+       fill-rule="evenodd"
+       id="path127" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(907.368,677)"
+       id="text128">-135</text>
+    <path
+       d="m 934.506,660.508 h 25.001 v 23 h -25.001 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#8fc2dd"
+       fill-rule="evenodd"
+       id="path128" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(932.655,677)"
+       id="text129">-173</text>
+    <path
+       d="m 959.506,660.508 h 25.001 v 23 h -25.001 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#f1a385"
+       fill-rule="evenodd"
+       id="path129" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(957.943,677)"
+       id="text130">-210</text>
+    <path
+       d="m 984.506,660.508 h 25.004 v 23 h -25.004 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#8fc2dd"
+       fill-rule="evenodd"
+       id="path130" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(983.231,677)"
+       id="text131">-199</text>
+    <path
+       d="m 1009.51,660.508 h 26 v 23 h -26 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#8fc2dd"
+       fill-rule="evenodd"
+       id="path131" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1008.52,677)"
+       id="text132">-187</text>
+    <path
+       d="m 1035.51,660.508 h 25 v 23 h -25 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#8fc2dd"
+       fill-rule="evenodd"
+       id="path132" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1033.81,677)"
+       id="text133">-176</text>
+    <path
+       d="m 1060.51,660.508 h 25 v 23 h -25 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#8fc2dd"
+       fill-rule="evenodd"
+       id="path133" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1059.09,677)"
+       id="text134">-164</text>
+    <path
+       d="m 1085.51,660.508 h 26 v 23 h -26 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#8fc2dd"
+       fill-rule="evenodd"
+       id="path134" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1084.38,677)"
+       id="text135">-153</text>
+    <path
+       d="m 1111.51,660.508 h 25 v 23 h -25 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#8fc2dd"
+       fill-rule="evenodd"
+       id="path135" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1109.67,677)"
+       id="text136">-142</text>
+    <path
+       d="m 1136.51,660.508 h 25 v 23 h -25 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#8fc2dd"
+       fill-rule="evenodd"
+       id="path136" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1134.96,677)"
+       id="text137">-130</text>
+    <path
+       d="m 1161.51,660.508 h 25 v 23 h -25 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#8fc2dd"
+       fill-rule="evenodd"
+       id="path137" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1160.24,677)"
+       id="text138">-119</text>
+    <path
+       d="m 1186.51,660.508 h 26 v 23 h -26 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#8fc2dd"
+       fill-rule="evenodd"
+       id="path138" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1185.53,677)"
+       id="text139">-107</text>
+    <path
+       d="m 1212.51,660.508 h 25 v 23 h -25 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#337cb7"
+       fill-rule="evenodd"
+       id="path139" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1214.57,677)"
+       id="text140">-96</text>
+    <path
+       d="m 1237.51,660.508 h 25 v 23 h -25 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#337cb7"
+       fill-rule="evenodd"
+       id="path140" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1239.86,677)"
+       id="text141">-85<tspan
+   font-size="14px"
+   x="-422.952"
+   y="23"
+   id="tspan140">-</tspan>390<tspan
+   font-size="14px"
+   x="-428.388"
+   y="23"
+   id="tspan141">-</tspan>24</text>
+    <path
+       d="m 832.507,683.508 h 26 v 23 h -26 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#053061"
+       fill-rule="evenodd"
+       id="path141" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(835.255,700)"
+       id="text142">-23</text>
+    <path
+       d="m 858.506,683.508 h 25.001 v 23 h -25.001 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#337cb7"
+       fill-rule="evenodd"
+       id="path142" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(860.543,700)"
+       id="text143">-53</text>
+    <path
+       d="m 883.506,683.508 h 25.001 v 23 h -25.001 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#337cb7"
+       fill-rule="evenodd"
+       id="path143" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(885.83,700)"
+       id="text144">-83</text>
+    <path
+       d="m 908.507,683.508 h 26 v 23 h -26 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#8fc2dd"
+       fill-rule="evenodd"
+       id="path144" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(907.368,700)"
+       id="text145">-113</text>
+    <path
+       d="m 934.506,683.508 h 25.001 v 23 h -25.001 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#8fc2dd"
+       fill-rule="evenodd"
+       id="path145" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(932.655,700)"
+       id="text146">-143</text>
+    <path
+       d="m 959.506,683.508 h 25.001 v 23 h -25.001 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#8fc2dd"
+       fill-rule="evenodd"
+       id="path146" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(957.943,700)"
+       id="text147">-173</text>
+    <path
+       d="m 984.506,683.508 h 25.004 v 23 h -25.004 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#f1a385"
+       fill-rule="evenodd"
+       id="path147" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(983.231,700)"
+       id="text148">-221</text>
+    <path
+       d="m 1009.51,683.508 h 26 v 23 h -26 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#f1a385"
+       fill-rule="evenodd"
+       id="path148" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1008.52,700)"
+       id="text149">-269</text>
+    <path
+       d="m 1035.51,683.508 h 25 v 23 h -25 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#c33d3d"
+       fill-rule="evenodd"
+       id="path149" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1033.81,700)"
+       id="text150">-316</text>
+    <path
+       d="m 1060.51,683.508 h 25 v 23 h -25 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#c33d3d"
+       fill-rule="evenodd"
+       id="path150" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1059.09,700)"
+       id="text151">-364</text>
+    <path
+       d="m 1085.51,683.508 h 26 v 23 h -26 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#c33d3d"
+       fill-rule="evenodd"
+       id="path151" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1084.38,700)"
+       id="text152">-412</text>
+    <path
+       d="m 1111.51,683.508 h 25 v 23 h -25 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#c33d3d"
+       fill-rule="evenodd"
+       id="path152" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1109.67,700)"
+       id="text153">-359</text>
+    <path
+       d="m 1136.51,683.508 h 25 v 23 h -25 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#c33d3d"
+       fill-rule="evenodd"
+       id="path153" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1134.96,700)"
+       id="text154">-306</text>
+    <path
+       d="m 1161.51,683.508 h 25 v 23 h -25 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#f1a385"
+       fill-rule="evenodd"
+       id="path154" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1160.24,700)"
+       id="text155">-254</text>
+    <path
+       d="m 1186.51,683.508 h 26 v 23 h -26 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#f1a385"
+       fill-rule="evenodd"
+       id="path155" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1185.53,700)"
+       id="text156">-201</text>
+    <path
+       d="m 1212.51,683.508 h 25 v 23 h -25 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#8fc2dd"
+       fill-rule="evenodd"
+       id="path156" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1210.82,700)"
+       id="text157">-148</text>
+    <path
+       d="m 1237.51,683.508 h 25 v 23 h -25 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#337cb7"
+       fill-rule="evenodd"
+       id="path157" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1239.86,700)"
+       id="text158">-95<tspan
+   font-size="14px"
+   x="-422.952"
+   y="23"
+   id="tspan157">-</tspan>326<tspan
+   font-size="14px"
+   x="-428.388"
+   y="23"
+   id="tspan158">-</tspan>24</text>
+    <path
+       d="m 832.507,706.508 h 26 v 23 h -26 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#053061"
+       fill-rule="evenodd"
+       id="path158" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(835.255,723)"
+       id="text159">-24</text>
+    <path
+       d="m 858.506,706.508 h 25.001 v 23 h -25.001 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#337cb7"
+       fill-rule="evenodd"
+       id="path159" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(860.543,723)"
+       id="text160">-46</text>
+    <path
+       d="m 883.506,706.508 h 25.001 v 23 h -25.001 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#337cb7"
+       fill-rule="evenodd"
+       id="path160" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(885.83,723)"
+       id="text161">-68</text>
+    <path
+       d="m 908.507,706.508 h 26 v 23 h -26 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#337cb7"
+       fill-rule="evenodd"
+       id="path161" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(911.118,723)"
+       id="text162">-91</text>
+    <path
+       d="m 934.506,706.508 h 25.001 v 23 h -25.001 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#8fc2dd"
+       fill-rule="evenodd"
+       id="path162" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(932.655,723)"
+       id="text163">-113</text>
+    <path
+       d="m 959.506,706.508 h 25.001 v 23 h -25.001 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#8fc2dd"
+       fill-rule="evenodd"
+       id="path163" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(957.943,723)"
+       id="text164">-135</text>
+    <path
+       d="m 984.506,706.508 h 25.004 v 23 h -25.004 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#f1a385"
+       fill-rule="evenodd"
+       id="path164" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(983.231,723)"
+       id="text165">-243</text>
+    <path
+       d="m 1009.51,706.508 h 26 v 23 h -26 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#c33d3d"
+       fill-rule="evenodd"
+       id="path165" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1008.52,723)"
+       id="text166">-350</text>
+    <path
+       d="m 1035.51,706.508 h 25 v 23 h -25 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#c33d3d"
+       fill-rule="evenodd"
+       id="path166" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1033.81,723)"
+       id="text167">-457</text>
+    <path
+       d="m 1060.51,706.508 h 25 v 23 h -25 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#c33d3d"
+       fill-rule="evenodd"
+       id="path167" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1059.09,723)"
+       id="text168">-564</text>
+    <path
+       d="m 1085.51,706.508 h 26 v 23 h -26 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#c33d3d"
+       fill-rule="evenodd"
+       id="path168" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1084.38,723)"
+       id="text169">-672</text>
+    <path
+       d="m 1111.51,706.508 h 25 v 23 h -25 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#c33d3d"
+       fill-rule="evenodd"
+       id="path169" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1109.67,723)"
+       id="text170">-577</text>
+    <path
+       d="m 1136.51,706.508 h 25 v 23 h -25 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#c33d3d"
+       fill-rule="evenodd"
+       id="path170" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1134.96,723)"
+       id="text171">-483</text>
+    <path
+       d="m 1161.51,706.508 h 25 v 23 h -25 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#c33d3d"
+       fill-rule="evenodd"
+       id="path171" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1160.24,723)"
+       id="text172">-388</text>
+    <path
+       d="m 1186.51,706.508 h 26 v 23 h -26 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#f1a385"
+       fill-rule="evenodd"
+       id="path172" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1185.53,723)"
+       id="text173">-294</text>
+    <path
+       d="m 1212.51,706.508 h 25 v 23 h -25 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#8fc2dd"
+       fill-rule="evenodd"
+       id="path173" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1210.82,723)"
+       id="text174">-199</text>
+    <path
+       d="m 1237.51,706.508 h 25 v 23 h -25 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#8fc2dd"
+       fill-rule="evenodd"
+       id="path174" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1236.11,723)"
+       id="text175">-105<tspan
+   font-size="14px"
+   x="-419.202"
+   y="23"
+   id="tspan174">-</tspan>261<tspan
+   font-size="14px"
+   x="-424.638"
+   y="23"
+   id="tspan175">-</tspan>24</text>
+    <path
+       d="m 832.507,729.508 h 26 v 23 h -26 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#053061"
+       fill-rule="evenodd"
+       id="path175" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(835.255,746)"
+       id="text176">-24</text>
+    <path
+       d="m 858.506,729.508 h 25.001 v 23 h -25.001 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#337cb7"
+       fill-rule="evenodd"
+       id="path176" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(860.543,746)"
+       id="text177">-39</text>
+    <path
+       d="m 883.506,729.508 h 25.001 v 23 h -25.001 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#337cb7"
+       fill-rule="evenodd"
+       id="path177" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(885.83,746)"
+       id="text178">-53</text>
+    <path
+       d="m 908.507,729.508 h 26 v 23 h -26 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#337cb7"
+       fill-rule="evenodd"
+       id="path178" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(911.118,746)"
+       id="text179">-68</text>
+    <path
+       d="m 934.506,729.508 h 25.001 v 23 h -25.001 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#337cb7"
+       fill-rule="evenodd"
+       id="path179" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(936.405,746)"
+       id="text180">-83</text>
+    <path
+       d="m 959.506,729.508 h 25.001 v 23 h -25.001 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#337cb7"
+       fill-rule="evenodd"
+       id="path180" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(961.693,746)"
+       id="text181">-98</text>
+    <path
+       d="m 984.506,729.508 h 25.004 v 23 h -25.004 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#f1a385"
+       fill-rule="evenodd"
+       id="path181" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(983.231,746)"
+       id="text182">-264</text>
+    <path
+       d="m 1009.51,729.508 h 26 v 23 h -26 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#c33d3d"
+       fill-rule="evenodd"
+       id="path182" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1008.52,746)"
+       id="text183">-431</text>
+    <path
+       d="m 1035.51,729.508 h 25 v 23 h -25 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#c33d3d"
+       fill-rule="evenodd"
+       id="path183" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1033.81,746)"
+       id="text184">-598</text>
+    <path
+       d="m 1060.51,729.508 h 25 v 23 h -25 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#c33d3d"
+       fill-rule="evenodd"
+       id="path184" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1059.09,746)"
+       id="text185">-764</text>
+    <path
+       d="m 1085.51,729.508 h 26 v 23 h -26 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#c33d3d"
+       fill-rule="evenodd"
+       id="path185" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1084.38,746)"
+       id="text186">-931</text>
+    <path
+       d="m 1111.51,729.508 h 25 v 23 h -25 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#c33d3d"
+       fill-rule="evenodd"
+       id="path186" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1109.67,746)"
+       id="text187">-795</text>
+    <path
+       d="m 1136.51,729.508 h 25 v 23 h -25 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#c33d3d"
+       fill-rule="evenodd"
+       id="path187" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1134.96,746)"
+       id="text188">-659</text>
+    <path
+       d="m 1161.51,729.508 h 25 v 23 h -25 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#c33d3d"
+       fill-rule="evenodd"
+       id="path188" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1160.24,746)"
+       id="text189">-523</text>
+    <path
+       d="m 1186.51,729.508 h 26 v 23 h -26 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#c33d3d"
+       fill-rule="evenodd"
+       id="path189" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1185.53,746)"
+       id="text190">-387</text>
+    <path
+       d="m 1212.51,729.508 h 25 v 23 h -25 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#f1a385"
+       fill-rule="evenodd"
+       id="path190" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1210.82,746)"
+       id="text191">-251</text>
+    <path
+       d="m 1237.51,729.508 h 25 v 23 h -25 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#8fc2dd"
+       fill-rule="evenodd"
+       id="path191" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1236.11,746)"
+       id="text192">-115<tspan
+   font-size="14px"
+   x="-419.202"
+   y="23"
+   id="tspan191">-</tspan>196<tspan
+   font-size="14px"
+   x="-424.638"
+   y="23"
+   id="tspan192">-</tspan>24</text>
+    <path
+       d="m 832.507,752.508 h 26 v 23 h -26 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#053061"
+       fill-rule="evenodd"
+       id="path192" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(835.255,769)"
+       id="text193">-24</text>
+    <path
+       d="m 858.506,752.508 h 25.001 v 23 h -25.001 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#337cb7"
+       fill-rule="evenodd"
+       id="path193" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(860.543,769)"
+       id="text194">-31</text>
+    <path
+       d="m 883.506,752.508 h 25.001 v 23 h -25.001 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#337cb7"
+       fill-rule="evenodd"
+       id="path194" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(885.83,769)"
+       id="text195">-38</text>
+    <path
+       d="m 908.507,752.508 h 26 v 23 h -26 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#337cb7"
+       fill-rule="evenodd"
+       id="path195" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(911.118,769)"
+       id="text196">-46</text>
+    <path
+       d="m 934.506,752.508 h 25.001 v 23 h -25.001 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#337cb7"
+       fill-rule="evenodd"
+       id="path196" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(936.405,769)"
+       id="text197">-53</text>
+    <path
+       d="m 959.506,752.508 h 25.001 v 23 h -25.001 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#337cb7"
+       fill-rule="evenodd"
+       id="path197" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(961.693,769)"
+       id="text198">-61</text>
+    <path
+       d="m 984.506,752.508 h 25.004 v 23 h -25.004 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#f1a385"
+       fill-rule="evenodd"
+       id="path198" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(983.231,769)"
+       id="text199">-286</text>
+    <path
+       d="m 1009.51,752.508 h 26 v 23 h -26 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#c33d3d"
+       fill-rule="evenodd"
+       id="path199" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1008.52,769)"
+       id="text200">-512</text>
+    <path
+       d="m 1035.51,752.508 h 25 v 23 h -25 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#c33d3d"
+       fill-rule="evenodd"
+       id="path200" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1033.81,769)"
+       id="text201">-738</text>
+    <path
+       d="m 1060.51,752.508 h 25 v 23 h -25 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#c33d3d"
+       fill-rule="evenodd"
+       id="path201" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1059.09,769)"
+       id="text202">-964</text>
+    <path
+       d="m 1085.51,752.508 h 26 v 23 h -26 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#c33d3d"
+       fill-rule="evenodd"
+       id="path202" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1080.63,769)"
+       id="text203">-1190</text>
+    <path
+       d="m 1111.51,752.508 h 25 v 23 h -25 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#c33d3d"
+       fill-rule="evenodd"
+       id="path203" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1105.92,769)"
+       id="text204">-1013</text>
+    <path
+       d="m 1136.51,752.508 h 25 v 23 h -25 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#c33d3d"
+       fill-rule="evenodd"
+       id="path204" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1134.96,769)"
+       id="text205">-835</text>
+    <path
+       d="m 1161.51,752.508 h 25 v 23 h -25 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#c33d3d"
+       fill-rule="evenodd"
+       id="path205" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1160.24,769)"
+       id="text206">-658</text>
+    <path
+       d="m 1186.51,752.508 h 26 v 23 h -26 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#c33d3d"
+       fill-rule="evenodd"
+       id="path206" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1185.53,769)"
+       id="text207">-480</text>
+    <path
+       d="m 1212.51,752.508 h 25 v 23 h -25 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#c33d3d"
+       fill-rule="evenodd"
+       id="path207" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1210.82,769)"
+       id="text208">-302</text>
+    <path
+       d="m 1237.51,752.508 h 25 v 23 h -25 z"
+       stroke="#ffffff"
+       stroke-width="0"
+       stroke-miterlimit="8"
+       fill="#8fc2dd"
+       fill-rule="evenodd"
+       id="path208" />
+    <text
+       fill="#ffffff"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="14px"
+       transform="translate(1236.11,769)"
+       id="text224">-125<tspan
+   fill="#373d3f"
+   font-weight="400"
+   font-size="18px"
+   x="-396.35101"
+   y="45"
+   id="tspan208">0</tspan><tspan
+   fill="#373d3f"
+   font-weight="400"
+   font-size="18px"
+   x="-371.06299"
+   y="45"
+   id="tspan209">5</tspan><tspan
+   fill="#373d3f"
+   font-weight="400"
+   font-size="18px"
+   x="-351.026"
+   y="45"
+   id="tspan210">10</tspan><tspan
+   fill="#373d3f"
+   font-weight="400"
+   font-size="18px"
+   x="-325.73801"
+   y="45"
+   id="tspan211">15</tspan><tspan
+   fill="#373d3f"
+   font-weight="400"
+   font-size="18px"
+   x="-300.45099"
+   y="45"
+   id="tspan212">20</tspan><tspan
+   fill="#373d3f"
+   font-weight="400"
+   font-size="18px"
+   x="-275.16299"
+   y="45"
+   id="tspan213">25</tspan><tspan
+   fill="#373d3f"
+   font-weight="400"
+   font-size="18px"
+   x="-249.875"
+   y="45"
+   id="tspan214">30</tspan><tspan
+   fill="#373d3f"
+   font-weight="400"
+   font-size="18px"
+   x="-224.588"
+   y="45"
+   id="tspan215">35</tspan><tspan
+   fill="#373d3f"
+   font-weight="400"
+   font-size="18px"
+   x="-199.3"
+   y="45"
+   id="tspan216">40</tspan><tspan
+   fill="#373d3f"
+   font-weight="400"
+   font-size="18px"
+   x="-174.013"
+   y="45"
+   id="tspan217">45</tspan><tspan
+   fill="#373d3f"
+   font-weight="400"
+   font-size="18px"
+   x="-148.72501"
+   y="45"
+   id="tspan218">50</tspan><tspan
+   fill="#373d3f"
+   font-weight="400"
+   font-size="18px"
+   x="-123.438"
+   y="45"
+   id="tspan219">55</tspan><tspan
+   fill="#373d3f"
+   font-weight="400"
+   font-size="18px"
+   x="-98.150002"
+   y="45"
+   id="tspan220">60</tspan><tspan
+   fill="#373d3f"
+   font-weight="400"
+   font-size="18px"
+   x="-72.862503"
+   y="45"
+   id="tspan221">65</tspan><tspan
+   fill="#373d3f"
+   font-weight="400"
+   font-size="18px"
+   x="-47.5751"
+   y="45"
+   id="tspan222">70</tspan><tspan
+   fill="#373d3f"
+   font-weight="400"
+   font-size="18px"
+   x="-22.287399"
+   y="45"
+   id="tspan223">75</tspan><tspan
+   fill="#373d3f"
+   font-weight="400"
+   font-size="18px"
+   x="3"
+   y="45"
+   id="tspan224">80</tspan></text>
+  </g>
+</svg>

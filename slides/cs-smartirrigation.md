@@ -6,10 +6,6 @@ subtitle: A Case Study
 
 # Hi!
 
-
-
-{{< include _cs-smartirrigation.md >}}
-
 Matteo Francia
 
 - Assistant professor at DISI - University of Bologna
@@ -34,24 +30,29 @@ Patent:
 # Smart Irrigation
 
 :::: {.columns}
-::: {.column width="60%"}
+::: {.column width="62%"}
 
 The synergy of internet of things (IoT) and precision farming is producing valuable applications in the Agritech domain [@vitali2021crop]
 
-- **Agritech**: use of technology for farming to improve efficiency and profitability
+- **Agritech**: use of technology for farming to improve efficiency & profitability
 
 Optimizing soil moisture is crucial for watering and crop performance [@turkeltaub2016real]
 
-- **GOAL**: saving water while improving fruit quality (i.e., provide a recommendation of the amount necessary water)
+**GOAL**
+
+- Saving water while improving fruit quality (i.e., provide a recommendation of the amount necessary water)
+
+Problems:
+
 - *Soils* have different water retention
 - *Watering systems* have different behaviors
     - Drippers vs sprinklers
 - *Plants* have different water demand
     - Kiwi [@judd1986water] vs Grapes
-- *Sensors* produce different measurements with different precisions
+  - *Sensors* produce different measurements with different precisions
 
 :::
-::: {.column width="40%"}
+::: {.column width="33%"}
 
 <img src="https://github.com/user-attachments/assets/a1c9c6ae-3a56-405b-bbff-4d3922b27a9d" style="max-height: 450px !important"></img>
 
@@ -261,6 +262,9 @@ Competitors rely on a single sensor (or a line of sensors at different depths) a
 
 ![Overview](./img/pluto-overview.svg)
 
+- **Online**: compute soil profiles as soon as new data arrives
+- **Offline**: refine the profiling function through *machine learning*
+
 # Data Collection
 
 :::: {.columns}
@@ -318,13 +322,13 @@ Dataset
 
 **Feature unaware (FU)**
 
-- Plug-and-play 
-- Create a linear interpolation of the real-time sensor data
+- Linear interpolation of the real-time sensor data
+- Plug-and-play (working since day 0)
 
 **Feature aware (FA)**
 
-- Require time for data collection and training/testing
-- Create an interpolation of the real-time sensor data through machine learning
+- Interpolation of the real-time sensor data through machine learning
+- Requires time for data collection and training/testing
 
 :::
 ::: {.column width="40%"}
@@ -338,8 +342,8 @@ Dataset
 
 Profile real-time sensor data through **statistical techniques**
 
-- Plug-and-play 
-- Create a linear interpolation of the real-time sensor data
+- Linear interpolation of the real-time sensor data
+- Plug-and-play (working since day 0)
 
 ![Feature Unaware Profiling](./img/pluto-bilinear.svg)
 
@@ -349,6 +353,9 @@ Profile real-time sensor data through **statistical techniques**
 ::: {.column width="60%"}
 
 Profile real-time sensor data through a **machine learning model**
+
+- Interpolation of the real-time sensor data through machine learning
+- Requires time for data collection and training/testing
 
 In the *offline pipeline*, we train the model given the soil texture as input...
 
@@ -398,7 +405,8 @@ This is a **(multi-output) regression problem**
 
 The hyperparameters (structure/learning rates) are set through a hyper-parameter tuning process
 
-- *HyperOpt* [@komer2019hyperopt]: state-of-the-art optimization technique to explore the huge search space of hyper-parameters
+- *HyperOpt* [@komer2019hyperopt]: optimization technique to explore the huge search space of hyper-parameters
+- We are nesting machine learning into machine learning!
 
 # Artificial Neural Networks
 
@@ -505,10 +513,10 @@ The technician sets an optimal soil moisture and the system must reach it
 :::
 ::::
 
-# Watering Advice (2021-2022) [@quartieri2021effect]
+# Watering Advice (2021-2024) [@quartieri2021effect]
 
 :::: {.columns}
-::: {.column width="50%"}
+::: {.column width="60%"}
 
 Given the following algorithm
 
@@ -525,51 +533,23 @@ We provide advice (recommendations) to technicians, who use (and adjust) the adv
 
 - *Pro*: it relies on the experience of the technician
 - *Con*:
-  - can be stuck in sub-optimal irrigations (e.g., the system never converges to the optimal scenario) and requires human intervention
+  - can be stuck in sub-optimal irrigations (e.g., the system slowly converges to the optimal scenario) and requires human intervention
   - does not scale out to many fields; controlling 6 fields already entails a lot of work
 
 :::
-::: {.column width="50%"}
+::: {.column width="40%"}
 
 ![](./img/pluto-optimal.svg)
 
 :::
 ::::
 
-# Automated Watering (2023-2024)
-
-![PID](./img/PID.svg)
-
-**PID**, a control loop mechanism employing feedback
-
-- Calculates an error $e(t)$ as the difference between a desired setpoint (SP) and a measured process variable (PV)
-    - $e(t) = r(t) - y(t)$
-- Applies a correction based on *proportional*, *integral*, and *derivative* terms
-
-# 
-
-![PID](./img/PID.svg)
-
-Correction is based on 3 terms: $u(t)=K_{p}e(t)+K_{i}\int_{0}^{t} e(\tau)\mathrm{d}\tau + K_{d}{\frac{\mathrm{d}e(t)}{\mathrm{d}t}}$
-
-- **P**: proportional to the *current value* of the $SP − PV$ error $e(t)$
-- **I**: integrates the *past values* of $e(t)$ over time to eliminate the residual error
-    - Ensures that even small, persistent errors are eventually corrected
-        - Imagine that the desired soil moisture is 60%, but the system is stuck at 57%
-        - P (alone) might not be strong enough to bring the system to exactly 60%, leaving a small steady-state error
-- **D**: estimate of *the future trend* of $e(t)$ based on its current rate of change
-    - Adds stability to the system by damping the response and reducing oscillations
-    - Acts like a brake, slowing down the response as the system nears the SP
-- $K_p, K_i, K_d$ are non-negative coefficients for the proportional, integral, and derivative terms respectively
-    - A higher $K_p$​ reduces the error faster but may lead to overshoot (going past the desired SP)
-    - Constants are initially entered knowing the type of application and tuned by observing the system response
-
 # Test Setup
 
 Two irrigation setups during the 2021-2024 campaigns (i.e., May/October) within the same orchard
 
 - *Control Row (T0)*: irrigation is manually controlled by the farmer
-- *Managed Row (T1 and T2)*: irrigation is automatically controlled using a 2D installation of 12 sensor
+- *Managed Row (T1 and T2)*: irrigation is automatically controlled using a 2D installation of 12 sensors
 
 :::: {.columns}
 ::: {.column width="33%"}
@@ -605,73 +585,6 @@ Two irrigation setups during the 2021-2024 campaigns (i.e., May/October) within 
 # Water consumption
 
 ![T0 vs T1](./img/pluto-t0t1.svg)
-
-:::: {.columns}
-::: {.column width="60%"}
-
-<table border="1" class="dataframe">
-  <thead>
-    <tr>
-      <th></th>
-      <th></th>
-      <th colspan="3" halign="left">Irrigation volume ($\frac{m^3}{ha}$)</th>
-      <th colspan="2" halign="left">Performance</th>
-    </tr>
-    <tr>
-      <th></th>
-      <th>Row</th>
-      <th>T0</th>
-      <th>T1</th>
-      <th>T2</th>
-      <th>T1</th>
-      <th>T2</th>
-    </tr>
-    <tr>
-      <th>Field</th>
-      <th>Year</th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th rowspan="3" valign="top">C1</th>
-      <th>2021</th>
-      <td>*3790*</td>
-      <td>2112</td>
-      <td>3382</td>
-      <td>**-44%**</td>
-      <td>-11%</td>
-    </tr>
-    <tr>
-      <th>2022</th>
-      <td>*3059*</td>
-      <td>2300</td>
-      <td>3420</td>
-      <td>**-25%**</td>
-      <td>+12%</td>
-    </tr>
-    <tr>
-      <th>2023</th>
-      <td>*3595*</td>
-      <td>2256</td>
-      <td>4453</td>
-      <td>**-37%**</td>
-      <td>+24%</td>
-    </tr>
-  </tbody>
-</table>
-
-:::
-::: {.column width="38%"}
-
-Fruit quality results are discussed in [@quartieri2021effect] and [@baldi2023smart]
-
-:::
-::::
 
 # Fruit quality {visibility="hidden"}
 
@@ -787,31 +700,80 @@ Fruit quality results are discussed in [@quartieri2021effect] and [@baldi2023sma
 # Results 
 
 :::: {.columns}
-::: {.column width="66%"}
+::: {.column width="55%"}
 
 **Uncountable**: crop sustainability & smaller environmental footprint
 
-**Countable**:
-
-- Faster and more dynamic intervention in the control of irrigation
-- More accurate approximation of soil dynamics
-
 **Money**:
 
-- *Fewer management issues*
-- *Smaller irrigation amount*
+- *Smaller irrigation amount & energy costs*
     - MR saved 44% of water during the whole campaign
-    - Max. saving in Jun and Sep: when it is harder to estimate water demand
-- *Comparable (or even better) quality of the product*; e.g. in 2021:
-    - Productivity of vines was unaffected by irrigation (32-39 kg/vine; 35-44 t/ha)
-    - CR's fruits appeared greener (H angle 105) than fruits from MR (H angle 102)
-    - CR's fruits solid concentration (12.7 brix) < MR's fruits (15.3 brix)
-        - Gap maintained after 2 months of storage (and 1 day of shelf life) 
-        - 17.4 brix for MR vs 16.1 brix for CR
-:::
-::: {.column width="34%"}
+    - Max. saving in Jun and Sep: harder to estimate water demand
 
-Savings in energy costs
+
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th colspan="3" halign="left">Irrigation volume ($\frac{m^3}{ha}$)</th>
+      <th colspan="2" halign="left">Performance</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Row</th>
+      <th>T0</th>
+      <th>T1</th>
+      <th>T2</th>
+      <th>T1</th>
+      <th>T2</th>
+    </tr>
+    <tr>
+      <th>Field</th>
+      <th>Year</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th rowspan="3" valign="top">C1</th>
+      <th>2021</th>
+      <td>*3790*</td>
+      <td>2112</td>
+      <td>3382</td>
+      <td>**-44%**</td>
+      <td>-11%</td>
+    </tr>
+    <tr>
+      <th>2022</th>
+      <td>*3059*</td>
+      <td>2300</td>
+      <td>3420</td>
+      <td>**-25%**</td>
+      <td>+12%</td>
+    </tr>
+    <tr>
+      <th>2023</th>
+      <td>*3595*</td>
+      <td>2256</td>
+      <td>4453</td>
+      <td>**-37%**</td>
+      <td>+24%</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+- Monitoring also help us in understanding the dynamics of the fields (e.g., due to convexing of the field)
+
+
+:::
+::: {.column width="45%"}
 
 <div style="font-size: 18px">
 
@@ -828,7 +790,39 @@ Savings in energy costs
 
 </div>
 
-But the main impact is on the economic values of Kiwi fruits
+:::
+::::
+
+# Results 
+
+:::: {.columns}
+::: {.column width="55%"}
+
+**Uncountable**: crop sustainability & smaller environmental footprint
+
+**Money**:
+
+- The main impact is on *economic values* of Kiwi fruits
+- Fruit quality results are discussed in [@quartieri2021effect] and [@baldi2023smart]
+- *Comparable (or even better) quality of the product*; e.g. in 2021:
+    - Productivity unaffected by irrigation (32-39 kg/vine; 35-44 t/ha)
+    - CR's fruits appeared greener (Hangle 105) than MR (Hangle 102)
+    - CR's fruits solid concentration (12.7 brix) < MR's fruits (15.3 brix)
+        - Gap maintained after 2 months of storage (and 1 day of shelf) 
+
+:::
+::: {.column width="45%"}
+
+<div style="font-size: 18px">
+
+|  |   |  |  |  | | | |
+| - | - | - | - | - | - | - | - |
+| *Class* | 1 | 2 | 3 | 4 | 5 |
+| *%Dry mass* | 16.5 | 17.5 | 18.5 | 19.5 | 22 | TGZ | **€/kg** | 
+| *T0* | 0 | 0.09 | 0.15 | 0.21 | 0.0 | 0.45 | **0.27** |
+| *T1* | 0 | 0.01 | 0.21 | 0.52 | 0.15 | 0.88 | **0.53** |
+
+</div>
 :::
 ::::
 

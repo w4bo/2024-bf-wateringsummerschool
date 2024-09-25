@@ -385,14 +385,18 @@ Matteo Francia <br> DISI — University of Bologna <br> m.francia@unibo.it
 <section id="smart-irrigation" class="title-slide slide level1 center">
 <h1>Smart Irrigation</h1>
 <div class="columns">
-<div class="column" style="width:60%;">
+<div class="column" style="width:62%;">
 <p>The synergy of internet of things (IoT) and precision farming is producing valuable applications in the Agritech domain <span class="citation" data-cites="vitali2021crop">(<a href="#/references" role="doc-biblioref" onclick="">Vitali et al. 2021</a>)</span></p>
 <ul>
-<li><strong>Agritech</strong>: use of technology for farming to improve efficiency and profitability</li>
+<li><strong>Agritech</strong>: use of technology for farming to improve efficiency &amp; profitability</li>
 </ul>
 <p>Optimizing soil moisture is crucial for watering and crop performance <span class="citation" data-cites="turkeltaub2016real">(<a href="#/references" role="doc-biblioref" onclick="">Turkeltaub, Kurtzman, and Dahan 2016</a>)</span></p>
+<p><strong>GOAL</strong></p>
 <ul>
-<li><strong>GOAL</strong>: saving water while improving fruit quality (i.e., provide a recommendation of the amount necessary water)</li>
+<li>Saving water while improving fruit quality (i.e., provide a recommendation of the amount necessary water)</li>
+</ul>
+<p>Problems:</p>
+<ul>
 <li><em>Soils</em> have different water retention</li>
 <li><em>Watering systems</em> have different behaviors
 <ul>
@@ -401,10 +405,10 @@ Matteo Francia <br> DISI — University of Bologna <br> m.francia@unibo.it
 <li><em>Plants</em> have different water demand
 <ul>
 <li>Kiwi <span class="citation" data-cites="judd1986water">(<a href="#/references" role="doc-biblioref" onclick="">Judd, McAneney, and Trought 1986</a>)</span> vs Grapes</li>
-</ul></li>
 <li><em>Sensors</em> produce different measurements with different precisions</li>
+</ul></li>
 </ul>
-</div><div class="column" style="width:40%;">
+</div><div class="column" style="width:33%;">
 <p><img src="https://github.com/user-attachments/assets/a1c9c6ae-3a56-405b-bbff-4d3922b27a9d" style="max-height: 450px !important"></p>
 </div>
 </div>
@@ -558,7 +562,11 @@ Matteo Francia <br> DISI — University of Bologna <br> m.francia@unibo.it
 <section id="overview" class="title-slide slide level1 center">
 <h1>Overview</h1>
 
-<img data-src="./img/pluto-overview.svg" class="r-stretch quarto-figure-center"><p class="caption">Overview</p></section>
+<img data-src="./img/pluto-overview.svg" class="r-stretch quarto-figure-center"><p class="caption">Overview</p><ul>
+<li><strong>Online</strong>: compute soil profiles as soon as new data arrives</li>
+<li><strong>Offline</strong>: refine the profiling function through <em>machine learning</em></li>
+</ul>
+</section>
 
 <section id="data-collection" class="title-slide slide level1 center">
 <h1>Data Collection</h1>
@@ -600,13 +608,13 @@ Matteo Francia <br> DISI — University of Bologna <br> m.francia@unibo.it
 <div class="column" style="width:60%;">
 <p><strong>Feature unaware (FU)</strong></p>
 <ul>
-<li>Plug-and-play</li>
-<li>Create a linear interpolation of the real-time sensor data</li>
+<li>Linear interpolation of the real-time sensor data</li>
+<li>Plug-and-play (working since day 0)</li>
 </ul>
 <p><strong>Feature aware (FA)</strong></p>
 <ul>
-<li>Require time for data collection and training/testing</li>
-<li>Create an interpolation of the real-time sensor data through machine learning</li>
+<li>Interpolation of the real-time sensor data through machine learning</li>
+<li>Requires time for data collection and training/testing</li>
 </ul>
 </div><div class="column" style="width:40%;">
 <div class="quarto-figure quarto-figure-center">
@@ -623,8 +631,8 @@ Matteo Francia <br> DISI — University of Bologna <br> m.francia@unibo.it
 <h1>Online Phase: Feature-Unaware Profiling</h1>
 <p>Profile real-time sensor data through <strong>statistical techniques</strong></p>
 <ul>
-<li>Plug-and-play</li>
-<li>Create a linear interpolation of the real-time sensor data</li>
+<li>Linear interpolation of the real-time sensor data</li>
+<li>Plug-and-play (working since day 0)</li>
 </ul>
 
 <img data-src="./img/pluto-bilinear.svg" class="r-stretch quarto-figure-center"><p class="caption">Feature Unaware Profiling</p></section>
@@ -634,6 +642,10 @@ Matteo Francia <br> DISI — University of Bologna <br> m.francia@unibo.it
 <div class="columns">
 <div class="column" style="width:60%;">
 <p>Profile real-time sensor data through a <strong>machine learning model</strong></p>
+<ul>
+<li>Interpolation of the real-time sensor data through machine learning</li>
+<li>Requires time for data collection and training/testing</li>
+</ul>
 <p>In the <em>offline pipeline</em>, we train the model given the soil texture as input…</p>
 <ul>
 <li>Simulate different patterns of SM to produce a dataset of simulated SM</li>
@@ -688,7 +700,8 @@ Matteo Francia <br> DISI — University of Bologna <br> m.francia@unibo.it
 
 <img data-src="./img/pluto-nn.svg" class="r-stretch"><p>The hyperparameters (structure/learning rates) are set through a hyper-parameter tuning process</p>
 <ul>
-<li><em>HyperOpt</em> <span class="citation" data-cites="komer2019hyperopt">(<a href="#/references" role="doc-biblioref" onclick="">Komer, Bergstra, and Eliasmith 2019</a>)</span>: state-of-the-art optimization technique to explore the huge search space of hyper-parameters</li>
+<li><em>HyperOpt</em> <span class="citation" data-cites="komer2019hyperopt">(<a href="#/references" role="doc-biblioref" onclick="">Komer, Bergstra, and Eliasmith 2019</a>)</span>: optimization technique to explore the huge search space of hyper-parameters</li>
+<li>We are nesting machine learning into machine learning!</li>
 </ul>
 </section>
 
@@ -774,10 +787,10 @@ Matteo Francia <br> DISI — University of Bologna <br> m.francia@unibo.it
 </div>
 </section>
 
-<section id="watering-advice-2021-2022-quartieri2021effect" class="title-slide slide level1 center">
-<h1>Watering Advice (2021-2022) <span class="citation" data-cites="quartieri2021effect">(<a href="#/references" role="doc-biblioref" onclick="">Quartieri et al. 2021</a>)</span></h1>
+<section id="watering-advice-2021-2024-quartieri2021effect" class="title-slide slide level1 center">
+<h1>Watering Advice (2021-2024) <span class="citation" data-cites="quartieri2021effect">(<a href="#/references" role="doc-biblioref" onclick="">Quartieri et al. 2021</a>)</span></h1>
 <div class="columns">
-<div class="column" style="width:50%;">
+<div class="column" style="width:60%;">
 <p>Given the following algorithm</p>
 <pre><code>IF
     ((#BlueCells + #LightBlueCells)/(#Cells) &lt; 0.50 &amp;&amp;
@@ -792,54 +805,14 @@ ELSE
 <li><em>Pro</em>: it relies on the experience of the technician</li>
 <li><em>Con</em>:
 <ul>
-<li>can be stuck in sub-optimal irrigations (e.g., the system never converges to the optimal scenario) and requires human intervention</li>
+<li>can be stuck in sub-optimal irrigations (e.g., the system slowly converges to the optimal scenario) and requires human intervention</li>
 <li>does not scale out to many fields; controlling 6 fields already entails a lot of work</li>
 </ul></li>
 </ul>
-</div><div class="column" style="width:50%;">
+</div><div class="column" style="width:40%;">
 <p><img data-src="./img/pluto-optimal.svg"></p>
 </div>
 </div>
-</section>
-
-<section id="automated-watering-2023-2024" class="title-slide slide level1 center">
-<h1>Automated Watering (2023-2024)</h1>
-
-<img data-src="./img/PID.svg" class="r-stretch quarto-figure-center"><p class="caption">PID</p><p><strong>PID</strong>, a control loop mechanism employing feedback</p>
-<ul>
-<li>Calculates an error <span class="math inline">\(e(t)\)</span> as the difference between a desired setpoint (SP) and a measured process variable (PV)
-<ul>
-<li><span class="math inline">\(e(t) = r(t) - y(t)\)</span></li>
-</ul></li>
-<li>Applies a correction based on <em>proportional</em>, <em>integral</em>, and <em>derivative</em> terms</li>
-</ul>
-</section>
-
-<section id="section-1" class="title-slide slide level1 center">
-<h1></h1>
-
-<img data-src="./img/PID.svg" class="r-stretch quarto-figure-center"><p class="caption">PID</p><p>Correction is based on 3 terms: <span class="math inline">\(u(t)=K_{p}e(t)+K_{i}\int_{0}^{t} e(\tau)\mathrm{d}\tau + K_{d}{\frac{\mathrm{d}e(t)}{\mathrm{d}t}}\)</span></p>
-<ul>
-<li><strong>P</strong>: proportional to the <em>current value</em> of the <span class="math inline">\(SP − PV\)</span> error <span class="math inline">\(e(t)\)</span></li>
-<li><strong>I</strong>: integrates the <em>past values</em> of <span class="math inline">\(e(t)\)</span> over time to eliminate the residual error
-<ul>
-<li>Ensures that even small, persistent errors are eventually corrected
-<ul>
-<li>Imagine that the desired soil moisture is 60%, but the system is stuck at 57%</li>
-<li>P (alone) might not be strong enough to bring the system to exactly 60%, leaving a small steady-state error</li>
-</ul></li>
-</ul></li>
-<li><strong>D</strong>: estimate of <em>the future trend</em> of <span class="math inline">\(e(t)\)</span> based on its current rate of change
-<ul>
-<li>Adds stability to the system by damping the response and reducing oscillations</li>
-<li>Acts like a brake, slowing down the response as the system nears the SP</li>
-</ul></li>
-<li><span class="math inline">\(K_p, K_i, K_d\)</span> are non-negative coefficients for the proportional, integral, and derivative terms respectively
-<ul>
-<li>A higher <span class="math inline">\(K_p\)</span>​ reduces the error faster but may lead to overshoot (going past the desired SP)</li>
-<li>Constants are initially entered knowing the type of application and tuned by observing the system response</li>
-</ul></li>
-</ul>
 </section>
 
 <section id="test-setup" class="title-slide slide level1 center">
@@ -847,7 +820,7 @@ ELSE
 <p>Two irrigation setups during the 2021-2024 campaigns (i.e., May/October) within the same orchard</p>
 <ul>
 <li><em>Control Row (T0)</em>: irrigation is manually controlled by the farmer</li>
-<li><em>Managed Row (T1 and T2)</em>: irrigation is automatically controlled using a 2D installation of 12 sensor</li>
+<li><em>Managed Row (T1 and T2)</em>: irrigation is automatically controlled using a 2D installation of 12 sensors</li>
 </ul>
 <div class="columns">
 <div class="column" style="width:33%;">
@@ -884,8 +857,24 @@ ELSE
 <section id="water-consumption" class="title-slide slide level1 center">
 <h1>Water consumption</h1>
 
-<img data-src="./img/pluto-t0t1.svg" class="r-stretch quarto-figure-center"><p class="caption">T0 vs T1</p><div class="columns">
-<div class="column" style="width:60%;">
+<img data-src="./img/pluto-t0t1.svg" class="r-stretch quarto-figure-center"><p class="caption">T0 vs T1</p></section>
+
+
+
+<section id="results" class="title-slide slide level1 center">
+<h1>Results</h1>
+<div class="columns">
+<div class="column" style="width:55%;">
+<p><strong>Uncountable</strong>: crop sustainability &amp; smaller environmental footprint</p>
+<p><strong>Money</strong>:</p>
+<ul>
+<li><em>Smaller irrigation amount &amp; energy costs</em>
+<ul>
+<li>MR saved 44% of water during the whole campaign</li>
+<li>Max. saving in Jun and Sep: harder to estimate water demand</li>
+</ul></li>
+</ul>
+<div>
 <table border="1" class="dataframe">
 <thead>
 <tr>
@@ -1007,45 +996,11 @@ C1
 </tr>
 </tbody>
 </table>
-</div><div class="column" style="width:38%;">
-<p>Fruit quality results are discussed in <span class="citation" data-cites="quartieri2021effect">(<a href="#/references" role="doc-biblioref" onclick="">Quartieri et al. 2021</a>)</span> and <span class="citation" data-cites="baldi2023smart">(<a href="#/references" role="doc-biblioref" onclick="">Baldi et al. 2023</a>)</span></p>
 </div>
-</div>
-</section>
-
-
-
-<section id="results" class="title-slide slide level1 center">
-<h1>Results</h1>
-<div class="columns">
-<div class="column" style="width:66%;">
-<p><strong>Uncountable</strong>: crop sustainability &amp; smaller environmental footprint</p>
-<p><strong>Countable</strong>:</p>
 <ul>
-<li>Faster and more dynamic intervention in the control of irrigation</li>
-<li>More accurate approximation of soil dynamics</li>
+<li>Monitoring also help us in understanding the dynamics of the fields (e.g., due to convexing of the field)</li>
 </ul>
-<p><strong>Money</strong>:</p>
-<ul>
-<li><em>Fewer management issues</em></li>
-<li><em>Smaller irrigation amount</em>
-<ul>
-<li>MR saved 44% of water during the whole campaign</li>
-<li>Max. saving in Jun and Sep: when it is harder to estimate water demand</li>
-</ul></li>
-<li><em>Comparable (or even better) quality of the product</em>; e.g.&nbsp;in 2021:
-<ul>
-<li>Productivity of vines was unaffected by irrigation (32-39 kg/vine; 35-44 t/ha)</li>
-<li>CR’s fruits appeared greener (H angle 105) than fruits from MR (H angle 102)</li>
-<li>CR’s fruits solid concentration (12.7 brix) &lt; MR’s fruits (15.3 brix)
-<ul>
-<li>Gap maintained after 2 months of storage (and 1 day of shelf life)</li>
-<li>17.4 brix for MR vs 16.1 brix for CR</li>
-</ul></li>
-</ul></li>
-</ul>
-</div><div class="column" style="width:34%;">
-<p>Savings in energy costs</p>
+</div><div class="column" style="width:45%;">
 <div style="font-size: 18px">
 <table>
 <thead>
@@ -1099,7 +1054,76 @@ C1
 </tbody>
 </table>
 </div>
-<p>But the main impact is on the economic values of Kiwi fruits</p>
+</div>
+</div>
+</section>
+
+<section id="results-1" class="title-slide slide level1 center">
+<h1>Results</h1>
+<div class="columns">
+<div class="column" style="width:55%;">
+<p><strong>Uncountable</strong>: crop sustainability &amp; smaller environmental footprint</p>
+<p><strong>Money</strong>:</p>
+<ul>
+<li>The main impact is on <em>economic values</em> of Kiwi fruits</li>
+<li>Fruit quality results are discussed in <span class="citation" data-cites="quartieri2021effect">(<a href="#/references" role="doc-biblioref" onclick="">Quartieri et al. 2021</a>)</span> and <span class="citation" data-cites="baldi2023smart">(<a href="#/references" role="doc-biblioref" onclick="">Baldi et al. 2023</a>)</span></li>
+<li><em>Comparable (or even better) quality of the product</em>; e.g.&nbsp;in 2021:
+<ul>
+<li>Productivity unaffected by irrigation (32-39 kg/vine; 35-44 t/ha)</li>
+<li>CR’s fruits appeared greener (Hangle 105) than MR (Hangle 102)</li>
+<li>CR’s fruits solid concentration (12.7 brix) &lt; MR’s fruits (15.3 brix)
+<ul>
+<li>Gap maintained after 2 months of storage (and 1 day of shelf)</li>
+</ul></li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:45%;">
+<div style="font-size: 18px">
+<table>
+<tbody>
+<tr class="odd">
+<td><em>Class</em></td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><em>%Dry mass</em></td>
+<td>16.5</td>
+<td>17.5</td>
+<td>18.5</td>
+<td>19.5</td>
+<td>22</td>
+<td>TGZ</td>
+<td><strong>€/kg</strong></td>
+</tr>
+<tr class="odd">
+<td><em>T0</em></td>
+<td>0</td>
+<td>0.09</td>
+<td>0.15</td>
+<td>0.21</td>
+<td>0.0</td>
+<td>0.45</td>
+<td><strong>0.27</strong></td>
+</tr>
+<tr class="even">
+<td><em>T1</em></td>
+<td>0</td>
+<td>0.01</td>
+<td>0.21</td>
+<td>0.52</td>
+<td>0.15</td>
+<td>0.88</td>
+<td><strong>0.53</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 </div>
 </section>

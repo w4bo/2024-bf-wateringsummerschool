@@ -16,6 +16,7 @@ Main background:
 - Ph.D. in *Computer Science and Engineering*
 - Big data and machine learning
 - ... with *applications* to the field of Precision Agriculture
+- *Interdisciplanarity* is very important!
 
 These slides are the result of a shared effort, many thanks to:
 
@@ -25,7 +26,7 @@ Patent:
 
 - "METODO E SISTEMA PER IL MONITORAGGIO DELL'UMIDITÀ DEL SUOLO" registered on October 18, 2023 N. 102021000023162
 
-<img src="./img/unibo.svg" style="box-shadow: none !important; position: fixed !important; top: -350px !important; right: -300px !important; ; max-height: 500px !important; max-width: 500px !important" />
+<img src="./img/unibo.svg" style="box-shadow: none !important; position: absolute !important; top: -250px !important; right: -250px !important; ; max-height: 500px !important; max-width: 500px !important" />
 
 # Smart Irrigation
 
@@ -49,7 +50,7 @@ Problems:
     - Drippers vs sprinklers
 - *Plants* have different water demand
     - Kiwi [@judd1986water] vs Grapes
-  - *Sensors* produce different measurements with different precisions
+- *Sensors* produce different measurements with different precisions
 
 :::
 ::: {.column width="33%"}

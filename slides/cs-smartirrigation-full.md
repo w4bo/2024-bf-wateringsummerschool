@@ -81,6 +81,104 @@ Our approach focuses on (Kiwi) orchards
 - Each row has many *drippers* (e.g., 1 every 60cm)
 - Drippers can water a *limited soil volume*
 
+# Digital Transformation
+
+![](https://github.com/user-attachments/assets/70b623f5-8d7e-4c98-94e6-1c723deb6420)
+
+# Digital Transformation
+
+:::: {.columns}
+::: {.column width="60%"}
+
+(Example) Scenarios of digital transformation in agriculture
+
+- *Scenario #1*
+    - The farmer/technician controls the watering system based only on the experience
+    - No digital data/KPIs/automation
+- *Scenario #2*
+    - The control of the watering system is refined by observing sensor data
+    - Sensor data is digitalized, no automation
+- *Scenario #3*
+    - A decision support system that, knowing how to optimize KPIs, controls the watering system
+    - Sensor data is digitalized, automatic KPIs and action
+
+:::
+::: {.column width="40%"}
+
+![Farmer](https://github.com/user-attachments/assets/f3931c14-05f2-48f8-aa1f-5a2065c1c3f6)
+
+:::
+::::
+
+# Digital Transformation and AI
+
+:::: {.columns}
+::: {.column width="60%"}
+
+(Example) Scenarios of digital transformation in agriculture
+
+- *Scenario #1*
+    - The farmer/technician controls the watering system based only on the experience
+    - No digital data/KPIs/automation
+- *Scenario #2*
+    - The control of the watering system is refined by observing sensor data
+    - Sensor data is digitalized, no automation
+- *Scenario #3*
+    - A decision support system that, knowing how to optimize KPIs, controls the watering system
+    - Sensor data is digitalized, automatic KPIs and action
+
+:::
+::: {.column width="40%"}
+
+![AI vs ML](https://s3.ap-southeast-1.amazonaws.com/files-scs-prod/public%2Fimages%2F1605842918803-AI+vs+ML+vs+DL.png)
+:::
+::::
+
+# Simulators...
+
+To achieve our goal, *it is necessary to understand of the soil behaves*
+
+Simulate the soil behavior according to physical models [@van1980closed]
+
+- However a fine-tuning is required, we need to know/parametrize everything
+    - *Soil* (e.g., retention curve, hysteresis [@pham2005study])
+    - *Plant* (e.g., roots, LAI)
+    - *Weather* conditions (temperature, humidity, wind, precipitations)
+    - *Watering* system (e.g., capacity, distance between drippers)
+- Tuning can take months (of human interactions)!
+    - Need to collect samples from the field... if some parameter is incorrect we need to trace back
+    - Need to implement/code all physical features into the simulator
+        - E.g., [@vsimunek2012hydrus] implemented in [@bittelli2015soil]
+    - Hyper-parameter tuning with machine learning can help, but it is not a silver bullet
+
+# ... vs Sensors
+
+:::: {.columns}
+::: {.column width="32%"}
+
+![[@koyuncu2021construction]](https://github.com/user-attachments/assets/34d873c7-cef3-40ff-96b7-a8a7cde01d3e)
+
+:::
+::: {.column width="32%"}
+
+![[@zheng2009spatial]](https://github.com/user-attachments/assets/35bd797c-6d1a-469b-9334-dbfdbea1107e)
+
+:::
+::: {.column width="32%"}
+
+![[@fersch2018synergies]](https://github.com/user-attachments/assets/a87b3e8e-6afc-451a-b971-9e31052b71d3)
+
+:::
+::::
+
+#
+
+![](https://github.com/user-attachments/assets/27db3d71-a7fc-47d1-b1ef-5026afcf72f4)
+
+# Open Field vs Simulator
+
+![](https://github.com/user-attachments/assets/0dc1575b-bdae-4805-a8fe-f19a6a9f7092)
+
 # Overview of the Approach 
 
 :::: {.columns}
@@ -195,6 +293,28 @@ Dataset
 
 :::
 ::::
+
+# Data Collection
+
+In the 2D setting (3 x 4 gypsum block sensors)
+
+- Sample soil moisture-sensor data every 15 minutes
+- Collect dripper and weather data  (humidity, temperature, solar radiation, wind) every hour
+
+How much data does each monitored field produce every season?
+
+$(12 \cdot 4 \frac{𝑠𝑎𝑚𝑝𝑙𝑒𝑠}{ℎ𝑜𝑢𝑟}+5 \frac{𝑠𝑎𝑚𝑝𝑙𝑒𝑠}{ℎ𝑜𝑢𝑟}) \cdot 24 \frac{ℎ𝑜𝑢𝑟}{𝑑𝑎𝑦} \cdot 30 \frac{𝑑𝑎𝑦}{𝑚𝑜𝑛𝑡ℎ} \cdot 5 \frac{𝑚𝑜𝑛𝑡ℎ}{𝑦𝑒𝑎𝑟} = 200 \cdot 10^3 \frac{𝑠𝑎𝑚𝑝𝑙𝑒𝑠}{𝑦𝑒𝑎𝑟}$
+
+We monitored 6 fields for 2 years
+
+$(200 \cdot 10^3 \frac{𝑠𝑎𝑚𝑝𝑙𝑒𝑠}{𝑦𝑒𝑎𝑟} \cdot 2 𝑦𝑒𝑎𝑟) \cdot 6= 2.4 \cdot 10^6 𝑠𝑎𝑚𝑝𝑙𝑒𝑠$
+
+We should consider accessory data for storage and optimization structures
+
+Dataset
+
+- *In two years, we collected 16GB of data (as of 2022-08-30)*
+- *In four years, we collected 64GB of data (as of 2024-08-30)*
 
 # Processing
 
@@ -330,6 +450,45 @@ Feature-unaware and feature-aware profiling **are complementary**
 :::
 ::::
 
+# Evaluation
+
+If I got 4 sensors, what layout should I choose?
+
+![](https://github.com/user-attachments/assets/eda101bd-308b-4a5b-ac51-4a0be5fd4ecc)
+
+# Evaluation
+
+If I got 4 sensors, what layout should I choose?
+
+:::: {.columns}
+::: {.column width="50%"}
+![](https://github.com/user-attachments/assets/69a8cc96-1e4d-49b7-9023-5facbe276a0b)
+:::
+::: {.column width="50%"}
+![](https://github.com/user-attachments/assets/9222e84b-0dd8-4bd2-bf07-15bc91c071cd)
+:::
+::::
+
+# Serving the Data
+
+![](https://github.com/user-attachments/assets/8571ffda-d6da-49c6-a616-463c3eb9b2ca)
+
+# Descriptive Analytics
+
+Starting from the profile, we derive meaningful visualizations/analysis
+
+- SM variance (left; lighter areas are those where SM varies the most) and average (right)
+
+The charts support both agricultural technicians and farmers
+
+- What is the watered volume? 
+    - This region is typically characterized by watering and high suction by the roots 
+    - Over-watering: high values in the average chart and low values in the variance chart
+- Where is the root suction higher?
+    - A high root suction quickly reduces the moisture in the soil and results in high soil moisture variance
+- How do soil moisture dynamics impact the watered volume?
+    - If, after increasing the water supplied, the profile does not change then the soil disperses water
+
 # Prescripting
 
 ![Model of the orchard](./img/prescripting.svg)
@@ -427,6 +586,117 @@ Two irrigation setups during the 2021-2024 campaigns (i.e., May/October) within 
 # Water consumption
 
 ![T0 vs T1](./img/pluto-t0t1.svg)
+
+# Fruit quality
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th colspan="3" halign="left">Color (H angle)</th>
+      <th colspan="3" halign="left">Dry mass (%)</th>
+      <th colspan="3" halign="left">Hardness (kg)</th>
+      <th colspan="3" halign="left">RSR (° brix)</th>
+      <th colspan="3" halign="left">Weight (g)</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Row</th>
+      <th>T0</th>
+      <th>T1</th>
+      <th>T2</th>
+      <th>T0</th>
+      <th>T1</th>
+      <th>T2</th>
+      <th>T0</th>
+      <th>T1</th>
+      <th>T2</th>
+      <th>T0</th>
+      <th>T1</th>
+      <th>T2</th>
+      <th>T0</th>
+      <th>T1</th>
+      <th>T2</th>
+    </tr>
+    <tr>
+      <th>Field</th>
+      <th>Year</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th rowspan="3" valign="top">C1</th>
+      <th>2021</th>
+      <td>105.0</td>
+      <td>102.0</td>
+      <td>103.0</td>
+      <td>17.2</td>
+      <td>18.4</td>
+      <td>18.8</td>
+      <td>4.07</td>
+      <td>3.15</td>
+      <td>4.05</td>
+      <td>12.7</td>
+      <td>15.3</td>
+      <td>13.7</td>
+      <td>116.0</td>
+      <td>116.0</td>
+      <td>107.0</td>
+    </tr>
+    <tr>
+      <th>2022</th>
+      <td>104.0</td>
+      <td>103.0</td>
+      <td>105.0</td>
+      <td>18.6</td>
+      <td>18.9</td>
+      <td>17.8</td>
+      <td>5.20</td>
+      <td>4.70</td>
+      <td>4.80</td>
+      <td>10.5</td>
+      <td>11.7</td>
+      <td>8.9</td>
+      <td>117.0</td>
+      <td>122.0</td>
+      <td>119.0</td>
+    </tr>
+    <tr>
+      <th>2023</th>
+      <td>104.6</td>
+      <td>102.9</td>
+      <td>104.9</td>
+      <td>17.4</td>
+      <td>18.2</td>
+      <td>17.2</td>
+      <td>5.50</td>
+      <td>5.20</td>
+      <td>5.61</td>
+      <td>10.1</td>
+      <td>11.6</td>
+      <td>8.8</td>
+      <td>143.0</td>
+      <td>143.0</td>
+      <td>155.0</td>
+    </tr>
+  </tbody>
+</table>
 
 # Results 
 
@@ -557,6 +827,26 @@ Two irrigation setups during the 2021-2024 campaigns (i.e., May/October) within 
 :::
 ::::
 
+# Future direction: soil moisture profiling
+
+Continual learning to overcome the limitations of the simulation
+
+- Adapting the model after its deployment
+- Use the data that is coming into the production environment and retrain the model-based 
+- Fit to unforeseen field conditions
+
+Improving the recommendation
+
+- Sometimes the soil does not behave as expected
+
+Homogeneous water recommendation; however, we need to handle:
+
+- The "water needs" of the plant
+- The phenological growth stages
+- Field conditions
+- Latitude/longitude
+- Availability of water
+
 # Future direction: forecasting
 
 **Remote observations**
@@ -571,5 +861,31 @@ Two irrigation setups during the 2021-2024 campaigns (i.e., May/October) within 
         - Soil conditions
         - Weather conditions
         - Type of irrigation
+
+# Future direction: unifying data platform
+
+:::: {.columns}
+::: {.column width="50%"}
+
+Soil monitoring is a possible application of data platforms for precision farming
+
+- Robotics, tractors, and implements
+- Satellite images and remote sensing indexes
+- Spatio-temporal analysis
+- And many others!
+
+Research issues
+
+- Shared dictionary. Many sub-domains of precision agriculture, each with its dictionary
+- Data integration. We need a common layer (storage+processing) to access data sources
+- Heterogeneous analytics. Data have multiple natures, spatial and temporal data require ad-hoc techniques 
+
+:::
+::: {.column width="50%"}
+
+![](https://github.com/user-attachments/assets/f710d9cb-d71c-468d-9b70-582024fe5c6e)
+
+:::
+::::
 
 # References

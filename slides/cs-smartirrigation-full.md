@@ -177,27 +177,35 @@ Simulate the soil behavior according to physical models [@van1980closed]
 # ... vs Sensors
 
 :::: {.columns}
-::: {.column width="32%"}
+::: {.column width="40%"}
+
+:::: {.columns}
+::: {.column width="100%"}
 
 ![[@koyuncu2021construction]](./img/slides121.png)
 
 :::
-::: {.column width="32%"}
+::: {.column width="100%"}
 
 ![[@zheng2009spatial]](./img/slides122.png)
 
 :::
-::: {.column width="32%"}
+::: {.column width="100%"}
 
 ![[@fersch2018synergies]](./img/slides123.png)
 
 :::
 ::::
 
+:::
+::: {.column width="60%"}
 
 These settings are too coarse to monitor soil moisture with precision
 
 - They require many sensors
+
+:::
+::::
 
 # Simulator vs Open Field 
 
@@ -484,7 +492,7 @@ Feature-unaware and feature-aware profiling **are complementary**
 
 If I got 4 sensors, what layout should I choose?
 
-![Error with four sensors](https://github.com/user-attachments/assets/eda101bd-308b-4a5b-ac51-4a0be5fd4ecc)
+![Error with four sensors](./img/pluto-result-4.svg)
 
 # Evaluation
 
@@ -492,10 +500,10 @@ If I got 4 sensors, what layout should I choose?
 
 :::: {.columns}
 ::: {.column width="50%"}
-![Presence of sensor in best layout](https://github.com/user-attachments/assets/69a8cc96-1e4d-49b7-9023-5facbe276a0b)
+![Presence of sensor in best layout](./img/hm.svg)
 :::
 ::: {.column width="50%"}
-![Selection of the layout](https://github.com/user-attachments/assets/9222e84b-0dd8-4bd2-bf07-15bc91c071cd)
+![Selection of the layout](./img/hm2.svg)
 :::
 ::::
 
@@ -857,17 +865,17 @@ Two irrigation setups during the 2021-2024 campaigns (i.e., May/October) within 
 
 # Future direction: soil moisture profiling
 
-Continual learning to overcome the limitations of the simulation
+*Continual learning* to overcome the limitations of the simulation
 
 - Adapting the model after its deployment
 - Use the data that is coming into the production environment and retrain the model-based 
 - Fit to unforeseen field conditions
 
-Improving the recommendation
+*Improving the recommendation*
 
 - Sometimes the soil does not behave as expected
 
-Homogeneous water recommendation; however, we need to handle:
+*Homogeneous water recommendation*; however, we need to handle:
 
 - The "water needs" of the plant
 - The phenological growth stages
@@ -911,7 +919,7 @@ Research issues
 :::
 ::: {.column width="50%"}
 
-![](https://github.com/user-attachments/assets/f710d9cb-d71c-468d-9b70-582024fe5c6e)
+![Shared data model](img/datamodel.svg)
 
 :::
 ::::

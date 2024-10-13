@@ -53,9 +53,32 @@ Problems:
 - *Sensors* produce different measurements with different precisions
 
 :::
-::: {.column width="33%"}
+::: {.column width=30%}
 
-<img src="https://github.com/user-attachments/assets/a1c9c6ae-3a56-405b-bbff-4d3922b27a9d" style="max-height: 450px !important"></img>
+![](img/slides114.jpg)
+
+:::: {.columns}
+::: {.column width=50%}
+
+![](img/slides115.jpg)
+
+:::
+::: {.column width=46%}
+
+![](img/slides116.jpg)
+
+:::
+::: {.column width=50%}
+
+![](img/slides117.jpg)
+
+:::
+::: {.column width=50%}
+
+![](img/slides118.jpg)
+
+:::
+::::
 
 :::
 ::::
@@ -83,7 +106,7 @@ Our approach focuses on (Kiwi) orchards
 
 # Digital Transformation
 
-![](https://github.com/user-attachments/assets/70b623f5-8d7e-4c98-94e6-1c723deb6420)
+![Analytics](https://github.com/user-attachments/assets/70b623f5-8d7e-4c98-94e6-1c723deb6420)
 
 # Digital Transformation
 
@@ -105,7 +128,7 @@ Our approach focuses on (Kiwi) orchards
 :::
 ::: {.column width="40%"}
 
-![Farmer](https://github.com/user-attachments/assets/f3931c14-05f2-48f8-aa1f-5a2065c1c3f6)
+![Farmer](img/slides119.png)
 
 :::
 ::::
@@ -156,28 +179,40 @@ Simulate the soil behavior according to physical models [@van1980closed]
 :::: {.columns}
 ::: {.column width="32%"}
 
-![[@koyuncu2021construction]](https://github.com/user-attachments/assets/34d873c7-cef3-40ff-96b7-a8a7cde01d3e)
+![[@koyuncu2021construction]](./img/slides121.png)
 
 :::
 ::: {.column width="32%"}
 
-![[@zheng2009spatial]](https://github.com/user-attachments/assets/35bd797c-6d1a-469b-9334-dbfdbea1107e)
+![[@zheng2009spatial]](./img/slides122.png)
 
 :::
 ::: {.column width="32%"}
 
-![[@fersch2018synergies]](https://github.com/user-attachments/assets/a87b3e8e-6afc-451a-b971-9e31052b71d3)
+![[@fersch2018synergies]](./img/slides123.png)
 
 :::
 ::::
 
-#
+
+These settings are too coarse to monitor soil moisture with precision
+
+- They require many sensors
+
+# Simulator vs Open Field 
+
+:::: {.columns}
+::: {.column width="50%"}
 
 ![](https://github.com/user-attachments/assets/27db3d71-a7fc-47d1-b1ef-5026afcf72f4)
 
-# Open Field vs Simulator
+:::
+::: {.column width="50%"}
 
 ![](https://github.com/user-attachments/assets/0dc1575b-bdae-4805-a8fe-f19a6a9f7092)
+
+:::
+::::
 
 # Overview of the Approach 
 
@@ -303,18 +338,13 @@ In the 2D setting (3 x 4 gypsum block sensors)
 
 How much data does each monitored field produce every season?
 
-$(12 \cdot 4 \frac{𝑠𝑎𝑚𝑝𝑙𝑒𝑠}{ℎ𝑜𝑢𝑟}+5 \frac{𝑠𝑎𝑚𝑝𝑙𝑒𝑠}{ℎ𝑜𝑢𝑟}) \cdot 24 \frac{ℎ𝑜𝑢𝑟}{𝑑𝑎𝑦} \cdot 30 \frac{𝑑𝑎𝑦}{𝑚𝑜𝑛𝑡ℎ} \cdot 5 \frac{𝑚𝑜𝑛𝑡ℎ}{𝑦𝑒𝑎𝑟} = 200 \cdot 10^3 \frac{𝑠𝑎𝑚𝑝𝑙𝑒𝑠}{𝑦𝑒𝑎𝑟}$
+- $(12 \cdot 4 \frac{𝑠𝑎𝑚𝑝𝑙𝑒𝑠}{ℎ𝑜𝑢𝑟}+5 \frac{𝑠𝑎𝑚𝑝𝑙𝑒𝑠}{ℎ𝑜𝑢𝑟}) \cdot 24 \frac{ℎ𝑜𝑢𝑟}{𝑑𝑎𝑦} \cdot 30 \frac{𝑑𝑎𝑦}{𝑚𝑜𝑛𝑡ℎ} \cdot 5 \frac{𝑚𝑜𝑛𝑡ℎ}{𝑦𝑒𝑎𝑟} = 200 \cdot 10^3 \frac{𝑠𝑎𝑚𝑝𝑙𝑒𝑠}{𝑦𝑒𝑎𝑟}$
 
 We monitored 6 fields for 2 years
 
-$(200 \cdot 10^3 \frac{𝑠𝑎𝑚𝑝𝑙𝑒𝑠}{𝑦𝑒𝑎𝑟} \cdot 2 𝑦𝑒𝑎𝑟) \cdot 6= 2.4 \cdot 10^6 𝑠𝑎𝑚𝑝𝑙𝑒𝑠$
+- $(200 \cdot 10^3 \frac{𝑠𝑎𝑚𝑝𝑙𝑒𝑠}{𝑦𝑒𝑎𝑟} \cdot 2 𝑦𝑒𝑎𝑟) \cdot 6= 2.4 \cdot 10^6 𝑠𝑎𝑚𝑝𝑙𝑒𝑠$
 
 We should consider accessory data for storage and optimization structures
-
-Dataset
-
-- *In two years, we collected 16GB of data (as of 2022-08-30)*
-- *In four years, we collected 64GB of data (as of 2024-08-30)*
 
 # Processing
 
@@ -454,7 +484,7 @@ Feature-unaware and feature-aware profiling **are complementary**
 
 If I got 4 sensors, what layout should I choose?
 
-![](https://github.com/user-attachments/assets/eda101bd-308b-4a5b-ac51-4a0be5fd4ecc)
+![Error with four sensors](https://github.com/user-attachments/assets/eda101bd-308b-4a5b-ac51-4a0be5fd4ecc)
 
 # Evaluation
 
@@ -462,16 +492,12 @@ If I got 4 sensors, what layout should I choose?
 
 :::: {.columns}
 ::: {.column width="50%"}
-![](https://github.com/user-attachments/assets/69a8cc96-1e4d-49b7-9023-5facbe276a0b)
+![Presence of sensor in best layout](https://github.com/user-attachments/assets/69a8cc96-1e4d-49b7-9023-5facbe276a0b)
 :::
 ::: {.column width="50%"}
-![](https://github.com/user-attachments/assets/9222e84b-0dd8-4bd2-bf07-15bc91c071cd)
+![Selection of the layout](https://github.com/user-attachments/assets/9222e84b-0dd8-4bd2-bf07-15bc91c071cd)
 :::
 ::::
-
-# Serving the Data
-
-![](https://github.com/user-attachments/assets/8571ffda-d6da-49c6-a616-463c3eb9b2ca)
 
 # Descriptive Analytics
 
@@ -488,6 +514,8 @@ The charts support both agricultural technicians and farmers
     - A high root suction quickly reduces the moisture in the soil and results in high soil moisture variance
 - How do soil moisture dynamics impact the watered volume?
     - If, after increasing the water supplied, the profile does not change then the soil disperses water
+
+![Variance and average soil moisture](img/variance.svg)
 
 # Prescripting
 

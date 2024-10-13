@@ -551,21 +551,23 @@ Matteo Francia <br> DISI — University of Bologna <br> m.francia@unibo.it
 <section id="vs-sensors" class="title-slide slide level1 center">
 <h1>… vs Sensors</h1>
 <div class="columns">
-<div class="column" style="width:32%;">
+<div class="column" style="width:40%;">
+<div class="columns">
+<div class="column" style="width:100%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="./img/slides121.png"></p>
 <figcaption><span class="citation" data-cites="koyuncu2021construction">(<a href="#/references" role="doc-biblioref" onclick="">Koyuncu, Gunduz, and Koyuncu 2021</a>)</span></figcaption>
 </figure>
 </div>
-</div><div class="column" style="width:32%;">
+</div><div class="column" style="width:100%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="./img/slides122.png"></p>
 <figcaption><span class="citation" data-cites="zheng2009spatial">(<a href="#/references" role="doc-biblioref" onclick="">Zheng et al. 2009</a>)</span></figcaption>
 </figure>
 </div>
-</div><div class="column" style="width:32%;">
+</div><div class="column" style="width:100%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="./img/slides123.png"></p>
@@ -574,10 +576,13 @@ Matteo Francia <br> DISI — University of Bologna <br> m.francia@unibo.it
 </div>
 </div>
 </div>
+</div><div class="column" style="width:60%;">
 <p>These settings are too coarse to monitor soil moisture with precision</p>
 <ul>
 <li>They require many sensors</li>
 </ul>
+</div>
+</div>
 </section>
 
 <section id="simulator-vs-open-field" class="title-slide slide level1 center">
@@ -914,7 +919,7 @@ Matteo Francia <br> DISI — University of Bologna <br> m.francia@unibo.it
 <h1>Evaluation</h1>
 <p>If I got 4 sensors, what layout should I choose?</p>
 
-<img data-src="https://github.com/user-attachments/assets/eda101bd-308b-4a5b-ac51-4a0be5fd4ecc" class="r-stretch quarto-figure-center"><p class="caption">Error with four sensors</p></section>
+<img data-src="./img/pluto-result-4.svg" class="r-stretch quarto-figure-center"><p class="caption">Error with four sensors</p></section>
 
 <section id="evaluation-2" class="title-slide slide level1 center">
 <h1>Evaluation</h1>
@@ -923,14 +928,14 @@ Matteo Francia <br> DISI — University of Bologna <br> m.francia@unibo.it
 <div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="https://github.com/user-attachments/assets/69a8cc96-1e4d-49b7-9023-5facbe276a0b"></p>
+<p><img data-src="./img/hm.svg"></p>
 <figcaption>Presence of sensor in best layout</figcaption>
 </figure>
 </div>
 </div><div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="https://github.com/user-attachments/assets/9222e84b-0dd8-4bd2-bf07-15bc91c071cd"></p>
+<p><img data-src="./img/hm2.svg"></p>
 <figcaption>Selection of the layout</figcaption>
 </figure>
 </div>
@@ -1599,17 +1604,17 @@ C1
 
 <section id="future-direction-soil-moisture-profiling" class="title-slide slide level1 center">
 <h1>Future direction: soil moisture profiling</h1>
-<p>Continual learning to overcome the limitations of the simulation</p>
+<p><em>Continual learning</em> to overcome the limitations of the simulation</p>
 <ul>
 <li>Adapting the model after its deployment</li>
 <li>Use the data that is coming into the production environment and retrain the model-based</li>
 <li>Fit to unforeseen field conditions</li>
 </ul>
-<p>Improving the recommendation</p>
+<p><em>Improving the recommendation</em></p>
 <ul>
 <li>Sometimes the soil does not behave as expected</li>
 </ul>
-<p>Homogeneous water recommendation; however, we need to handle:</p>
+<p><em>Homogeneous water recommendation</em>; however, we need to handle:</p>
 <ul>
 <li>The “water needs” of the plant</li>
 <li>The phenological growth stages</li>
@@ -1658,7 +1663,12 @@ C1
 <li>Heterogeneous analytics. Data have multiple natures, spatial and temporal data require ad-hoc techniques</li>
 </ul>
 </div><div class="column" style="width:50%;">
-<p><img data-src="https://github.com/user-attachments/assets/f710d9cb-d71c-468d-9b70-582024fe5c6e"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/datamodel.svg"></p>
+<figcaption>Shared data model</figcaption>
+</figure>
+</div>
 </div>
 </div>
 </section>

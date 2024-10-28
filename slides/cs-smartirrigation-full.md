@@ -177,7 +177,7 @@ Simulate the soil behavior according to physical models [@van1980closed]
 # ... vs Sensors
 
 :::: {.columns}
-::: {.column width="40%"}
+::: {.column width="28%"}
 
 :::: {.columns}
 ::: {.column width="100%"}
@@ -511,19 +511,23 @@ If I got 4 sensors, what layout should I choose?
 
 Starting from the profile, we derive meaningful visualizations/analysis
 
-- SM variance (left; lighter areas are those where SM varies the most) and average (right)
+:::: {.columns}
+::: {.column width="10%"}
+:::
+::: {.column width="80%"}
+
+![Variance (the yellower, the higher the variace) and Average soil moisture](img/variance.svg)
+
+:::
+::::
 
 The charts support both agricultural technicians and farmers
 
-- What is the watered volume? 
+- *Where is the watered volume*? 
     - This region is typically characterized by watering and high suction by the roots 
     - Over-watering: high values in the average chart and low values in the variance chart
-- Where is the root suction higher?
+- *Where is the root suction higher*?
     - A high root suction quickly reduces the moisture in the soil and results in high soil moisture variance
-- How do soil moisture dynamics impact the watered volume?
-    - If, after increasing the water supplied, the profile does not change then the soil disperses water
-
-![Variance and average soil moisture](img/variance.svg)
 
 # Prescripting
 

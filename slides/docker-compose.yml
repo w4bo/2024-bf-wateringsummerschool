@@ -3,7 +3,7 @@ services:
   build-quarto:
     init: true
     # restart: always
-    image: w4bo/quarto-slides:1.0.23
+    image: w4bo/quarto-slides:1.0.24
     hostname: build-quarto
     ports:
       - "6778:6778"

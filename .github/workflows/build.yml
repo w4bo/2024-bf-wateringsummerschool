@@ -15,7 +15,7 @@ jobs:
         with:
           branch: gh-pages
           folder: slides/_site
-      - uses: browser-actions/setup-chrome@v1
+      - uses: browser-actions/setup-chrome@v2
         with:
           chrome-version: 120
       - name: Export pdfs

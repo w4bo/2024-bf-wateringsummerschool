@@ -7,7 +7,7 @@ project:
 
 format:
   revealjs: 
-    theme: [white, slides.scss]
+    theme: [white, utils/slides.scss]
     menu: true
     progress: true
     slide-number: true

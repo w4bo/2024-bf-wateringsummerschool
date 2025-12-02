@@ -1,3 +1,9 @@
+## [1.0.3](https://github.com/w4bo/2024-bf-wateringsummerschool/compare/1.0.2...1.0.3) (2025-12-02)
+
+### Bug Fixes
+
+* gitignore and delete unused images ([fa0f140](https://github.com/w4bo/2024-bf-wateringsummerschool/commit/fa0f14039e71e510e7d373129a037e0b2b6d1f4d))
+
 ## [1.0.2](https://github.com/w4bo/2024-bf-wateringsummerschool/compare/1.0.1...1.0.2) (2025-12-01)
 
 ### Dependency updates

@@ -8,7 +8,8 @@
 **/_site/*
 !**/_site/.dummy
 **/.quarto
-**/*_files/
+**/*_files/ 
+**/removed-img/*
 
 # Created by https://www.toptal.com/developers/gitignore/api/venv,node,java,scala,macos,linux,gradle,python,windows,virtualenv,microsoftoffice
 # Edit at https://www.toptal.com/developers/gitignore?templates=venv,node,java,scala,macos,linux,gradle,python,windows,virtualenv,microsoftoffice

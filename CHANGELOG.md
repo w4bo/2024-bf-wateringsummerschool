@@ -1,3 +1,9 @@
+## [1.0.4](https://github.com/w4bo/2024-bf-wateringsummerschool/compare/1.0.3...1.0.4) (2025-12-02)
+
+### Bug Fixes
+
+* update utils ([621bf67](https://github.com/w4bo/2024-bf-wateringsummerschool/commit/621bf6794234b923dda3322b229bc91fdf6ac5f7))
+
 ## [1.0.3](https://github.com/w4bo/2024-bf-wateringsummerschool/compare/1.0.2...1.0.3) (2025-12-02)
 
 ### Bug Fixes

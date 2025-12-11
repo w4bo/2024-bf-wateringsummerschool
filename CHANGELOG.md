@@ -1,3 +1,21 @@
+## [1.0.5](https://github.com/w4bo/2024-bf-wateringsummerschool/compare/1.0.4...1.0.5) (2025-12-11)
+
+### Dependency updates
+
+* **deps:** update node.js to 24.12 ([#92](https://github.com/w4bo/2024-bf-wateringsummerschool/issues/92)) ([9e4f078](https://github.com/w4bo/2024-bf-wateringsummerschool/commit/9e4f07884b01344401f45eafd370efb2b5d03bfc))
+* **deps:** update slides/utils digest to c0b7a27 ([#90](https://github.com/w4bo/2024-bf-wateringsummerschool/issues/90)) ([65517dd](https://github.com/w4bo/2024-bf-wateringsummerschool/commit/65517dde0fa22fabd4f6c6a90bc5fae5ff1a3a61))
+* **deps:** update w4bo/quarto-slides docker tag to v1.0.27 ([#91](https://github.com/w4bo/2024-bf-wateringsummerschool/issues/91)) ([318b3d7](https://github.com/w4bo/2024-bf-wateringsummerschool/commit/318b3d73082dcef5d7ee2431bd340ccb863d8aa1))
+
+### Bug Fixes
+
+* build from utils ([ac9e8fd](https://github.com/w4bo/2024-bf-wateringsummerschool/commit/ac9e8fd15f425cf1495889678da0d7a3a23b248e))
+* build from utils ([e83f8cd](https://github.com/w4bo/2024-bf-wateringsummerschool/commit/e83f8cda419d58e0bff6f4605032abf5b6a3f514))
+
+### Build and continuous integration
+
+* **deps:** update actions/setup-node action to v6.1.0 ([#88](https://github.com/w4bo/2024-bf-wateringsummerschool/issues/88)) ([10e2b67](https://github.com/w4bo/2024-bf-wateringsummerschool/commit/10e2b672c8f475c382ad262e2cff056b5068893f))
+* **deps:** update jamesives/github-pages-deploy-action action to v4.7.6 ([#89](https://github.com/w4bo/2024-bf-wateringsummerschool/issues/89)) ([8490dbf](https://github.com/w4bo/2024-bf-wateringsummerschool/commit/8490dbf332b057a8545cb8b180178aae3c9526ea))
+
 ## [1.0.4](https://github.com/w4bo/2024-bf-wateringsummerschool/compare/1.0.3...1.0.4) (2025-12-02)
 
 ### Bug Fixes

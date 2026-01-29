@@ -105,14 +105,14 @@ Our approach is composed of two phases
 :::
 ::: {.column width="50%"}
 
-![Model of the orchard](./img/overview.svg)
+![SMARTER](./img/overview.svg)
 
 :::
 ::::
 
 # Monitoring
 
-![Model of the orchard](./img/monitoring.svg)
+![SMARTER: Monitoring](./img/monitoring.svg)
 
 # From Sensors to Soil Profiles
 
@@ -332,7 +332,7 @@ Feature-unaware and feature-aware profiling **are complementary**
 
 # Prescripting
 
-![Model of the orchard](./img/prescripting.svg)
+![SMARTER: Prescripting](./img/prescripting.svg)
 
 # Prescripting
 

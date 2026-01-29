@@ -246,14 +246,14 @@ Our approach is composed of two phases
 :::
 ::: {.column width="50%"}
 
-![Model of the orchard](./img/overview.svg)
+![SMARTER](./img/overview.svg)
 
 :::
 ::::
 
 # Monitoring
 
-![Model of the orchard](./img/monitoring.svg)
+![SMARTER: Monitoring](./img/monitoring.svg)
 
 # From Sensors to Soil Profiles
 
@@ -289,7 +289,7 @@ Competitors rely on a single sensor (or a line of sensors at different depths) a
 :::: {.columns}
 ::: {.column width="50%"}
 
-![Model of the orchard](./img/soil-volume.svg)
+![Soil volume](./img/soil-volume.svg)
 
 :::
 ::: {.column width="50%"}
@@ -531,7 +531,7 @@ The charts support both agricultural technicians and farmers
 
 # Prescripting
 
-![Model of the orchard](./img/prescripting.svg)
+![SMARTER: Prescripting](./img/prescripting.svg)
 
 # Prescripting
 
